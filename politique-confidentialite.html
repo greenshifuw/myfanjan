@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="https://drive.google.com/thumbnail?id=1WpE1lavL-ZFEXvJS8pRrDH2rXHDS35t5&sz=w200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Politique de Confidentialité | MyFanjan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        canopy: '#739F78',
+                        lagoon: '#1B365D',
+                        alabaster: '#F8F9FA',
+                        earth: '#7B5E43',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="font-sans antialiased text-gray-900 bg-white selection:bg-canopy selection:text-white flex flex-col min-h-screen">
+    <!-- Navbar (Same as previous) -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center shrink-0">
+                    <a href="index.html" class="flex items-center gap-3 group">
+                        <img src="https://drive.google.com/thumbnail?id=1WpE1lavL-ZFEXvJS8pRrDH2rXHDS35t5&sz=w1000"
+                            alt="MyFanjan Logo"
+                            class="w-auto object-contain bg-white rounded-full p-1 transition-all duration-300 h-16"
+                            referrerpolicy="no-referrer" />
+                        <span
+                            class="font-display font-bold text-3xl md:text-5xl tracking-tight transition-colors duration-300 text-canopy">MyFanjan</span>
+                    </a>
+                </div>
+                <div class="hidden lg:flex space-x-6 items-center flex-wrap justify-end">
+                    <a href="index.html"
+                        class="font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">Accueil</a>
+                    <a href="vision.html"
+                        class="font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">Vision</a>
+                    <div class="relative group">
+                        <button
+                            class="flex items-center gap-1 font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">
+                            Nos solutions <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div
+                            class="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl py-2 transform transition-all duration-200 origin-top-left opacity-0 scale-95 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:visible">
+                            <a href="solutions-collectivites.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Collectivités
+                                & institutions</a>
+                            <a href="solutions-agriculteurs.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Agriculteurs
+                                & exploitants</a>
+                            <a href="solutions-particuliers.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Particuliers</a>
+                            <a href="solutions-entreprises.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Entreprises
+                                & RSE</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button
+                            class="flex items-center gap-1 font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">
+                            Mieux nous connaître <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div
+                            class="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl py-2 transform transition-all duration-200 origin-top-left opacity-0 scale-95 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:visible">
+                            <a href="qui-sommes-nous.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Qui
+                                sommes-nous</a>
+                            <a href="notre-histoire.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Notre
+                                histoire</a>
+                            <a href="equipe.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">L'équipe
+                                MyFanjan</a>
+                        </div>
+                    </div>
+                    <a href="technologie.html"
+                        class="font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">Technologie</a>
+                    <a href="contact.html"
+                        class="font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">Contact</a>
+                </div>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-btn" class="text-lagoon focus:outline-none bg-transparent border-0"><i
+                            data-lucide="menu" class="w-7 h-7"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu"
+            class="hidden lg:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 h-[90vh] overflow-y-auto">
+            <div class="px-4 pt-2 pb-6 space-y-1 flex flex-col text-gray-800">
+                <div class="border-b border-gray-100 last:border-0"><a href="index.html"
+                        class="block px-3 py-3 text-base font-bold text-lagoon hover:text-canopy uppercase tracking-wider">Accueil</a>
+                </div>
+                <div class="border-b border-gray-100 last:border-0"><a href="vision.html"
+                        class="block px-3 py-3 text-base font-bold text-lagoon hover:text-canopy uppercase tracking-wider">Vision</a>
+                </div>
+                <div class="border-b border-gray-100 last:border-0">
+                    <div class="px-3 py-3 text-base font-bold text-lagoon uppercase tracking-wider mt-2">Nos solutions
+                    </div>
+                    <div class="pl-6 pb-2 space-y-2">
+                        <a href="solutions-collectivites.html"
+                            class="block text-gray-600 hover:text-canopy py-2">Collectivités & institutions</a>
+                        <a href="solutions-agriculteurs.html"
+                            class="block text-gray-600 hover:text-canopy py-2">Agriculteurs & exploitants</a>
+                        <a href="solutions-particuliers.html"
+                            class="block text-gray-600 hover:text-canopy py-2">Particuliers</a>
+                        <a href="solutions-entreprises.html"
+                            class="block text-gray-600 hover:text-canopy py-2">Entreprises & RSE</a>
+                    </div>
+                </div>
+                <div class="border-b border-gray-100 last:border-0">
+                    <div class="px-3 py-3 text-base font-bold text-lagoon uppercase tracking-wider mt-2">Mieux nous
+                        connaître</div>
+                    <div class="pl-6 pb-2 space-y-2">
+                        <a href="qui-sommes-nous.html" class="block text-gray-600 hover:text-canopy py-2">Qui
+                            sommes-nous</a>
+                        <a href="notre-histoire.html" class="block text-gray-600 hover:text-canopy py-2">Notre
+                            histoire</a>
+                        <a href="equipe.html" class="block text-gray-600 hover:text-canopy py-2">L'équipe MyFanjan</a>
+                    </div>
+                </div>
+                <div class="border-b border-gray-100 last:border-0"><a href="technologie.html"
+                        class="block px-3 py-3 text-base font-bold text-lagoon hover:text-canopy uppercase tracking-wider">Technologie</a>
+                </div>
+                <a href="contact.html"
+                    class="mt-6 block w-full text-center px-5 py-3 rounded-md font-bold bg-canopy text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+
+        <section class="pt-32 pb-24 bg-alabaster min-h-screen">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white rounded-2xl shadow-sm p-8 md:p-12 border border-gray-100">
+                    <h1 class="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-8">Politique de
+                        Confidentialité</h1>
+
+                    <div class="prose prose-lg text-gray-600 max-w-none">
+                        <p class="mb-6">
+                            La société <strong>SAS NEOPHYTA</strong> (marque MyFanjan) s'engage à ce que la collecte et
+                            le traitement de vos données, effectués à partir du site MyFanjan, soient conformes au
+                            règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés.
+                        </p>
+
+                        <h3 class="text-lagoon font-bold text-xl mb-4">1. Collecte des données personnelles</h3>
+                        <p class="mb-4">
+                            Nous collectons les données suivantes via le formulaire de contact présent sur notre site :
+                        </p>
+                        <ul class="list-disc pl-5 mb-6 space-y-2">
+                            <li>Nom et Prénom</li>
+                            <li>Adresse email</li>
+                            <li>Type de profil (Collectivité, Agriculteur, Particulier, etc.)</li>
+                            <li>Message libre</li>
+                        </ul>
+
+                        <h3 class="text-lagoon font-bold text-xl mb-4">2. Finalité des données collectées</h3>
+                        <p class="mb-6">
+                            Les informations recueillies font l’objet d’un traitement informatique destiné exclusivement
+                            à <strong>SAS NEOPHYTA</strong> pour les finalités suivantes :
+                        </p>
+                        <ul class="list-disc pl-5 mb-6 space-y-2">
+                            <li>Répondre aux demandes de renseignements et de devis envoyées via le formulaire de
+                                contact.</li>
+                            <li>La gestion de la relation client/prospect.</li>
+                            <li>L'envoi d'informations commerciales si vous y avez consenti explicitement.</li>
+                        </ul>
+
+                        <h3 class="text-lagoon font-bold text-xl mb-4">3. Durée de conservation</h3>
+                        <p class="mb-6">
+                            Vos données personnelles sont conservées uniquement pour le temps nécessaire à
+                            l'accomplissement de l'objectif qui a été poursuivi lors de leur collecte (par exemple, le
+                            temps de traiter votre demande de devis), puis archivées selon les durées légales de
+                            prescription.
+                        </p>
+
+                        <h3 class="text-lagoon font-bold text-xl mb-4">4. Sécurité des données</h3>
+                        <p class="mb-6">
+                            La SAS NEOPHYTA met en œuvre toutes les mesures techniques et organisationnelles nécessaires
+                            pour garantir la sécurité et la confidentialité des données personnelles collectées et
+                            traitées, et notamment pour empêcher qu'elles soient déformées, endommagées ou communiquées
+                            à des tiers non autorisés.
+                        </p>
+
+                        <h3 class="text-lagoon font-bold text-xl mb-4">5. Vos droits (Informatique et Libertés)</h3>
+                        <p class="mb-4">
+                            Conformément à la réglementation applicable, vous disposez des droits suivants sur vos
+                            données personnelles :
+                        </p>
+                        <ul class="list-disc pl-5 mb-6 space-y-2">
+                            <li>Droit d'accès, de rectification et d'effacement des données.</li>
+                            <li>Droit à la limitation du traitement.</li>
+                            <li>Droit d'opposition au traitement.</li>
+                        </ul>
+                        <p class="mb-6">
+                            Pour exercer ces droits, vous pouvez nous contacter à l'adresse suivante :<br />
+                            <strong>Email :</strong> <a href="mailto:contact@myfanjan.com"
+                                class="text-canopy hover:underline">contact@myfanjan.com</a><br />
+                            <strong>Adresse postale :</strong> SAS NEOPHYTA, 22 impasse Commandant Richard, 97430 Le
+                            TAMPON, La Réunion.
+                        </p>
+
+                        <h3 class="text-lagoon font-bold text-xl mb-4">6. Cookies</h3>
+                        <p class="mb-6">
+                            La navigation sur le site MyFanjan est susceptible de provoquer l’installation de cookie(s)
+                            sur l’ordinateur de l’utilisateur. Un cookie est un fichier de petite taille, qui ne permet
+                            pas l’identification de l’utilisateur, mais qui enregistre des informations relatives à la
+                            navigation d’un ordinateur sur un site. Les données ainsi obtenues visent à faciliter la
+                            navigation ultérieure sur le site, et ont également vocation à permettre diverses mesures de
+                            fréquentation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Same as previous) -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://drive.google.com/thumbnail?id=1WpE1lavL-ZFEXvJS8pRrDH2rXHDS35t5&sz=w1000"
+                            alt="MyFanjan Logo" class="h-24 w-auto object-contain bg-white rounded-full p-2"
+                            referrerpolicy="no-referrer" />
+                        <span class="font-display font-bold text-4xl md:text-5xl">MyFanjan</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-sm">Leader de l'agriculture verticale en milieu tropical. Nous
+                        transformons les territoires pour une autonomie alimentaire durable.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/myfanjan" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-white transition-colors"><i data-lucide="linkedin"
+                                class="w-6 h-6"></i></a>
+                        <a href="https://www.facebook.com/myfanjan" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-white transition-colors"><i data-lucide="facebook"
+                                class="w-6 h-6"></i></a>
+                        <a href="https://www.instagram.com/myfanjan" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-white transition-colors"><i data-lucide="instagram"
+                                class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Navigation</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="index.html" class="hover:text-canopy transition-colors">Accueil</a></li>
+                        <li><a href="vision.html" class="hover:text-canopy transition-colors">Vision</a></li>
+                        <li><a href="solutions-collectivites.html"
+                                class="hover:text-canopy transition-colors">Solutions</a></li>
+                        <li><a href="solutions-entreprises.html" class="hover:text-canopy transition-colors">Offres</a>
+                        </li>
+                        <li><a href="technologie.html" class="hover:text-canopy transition-colors">Technologie</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Contact</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>La Réunion, France</li>
+                        <li>contact@myfanjan.com</li>
+                        <li>+262 123 456 789</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p class="mb-4 md:mb-0">&copy; <span id="year"></span> MyFanjan. Tous droits réservés.</p>
+                <div class="flex space-x-6">
+                    <a href="mentions-legales.html" class="hover:text-canopy transition-colors">Mentions Légales</a>
+                    <a href="politique-confidentialite.html" class="hover:text-canopy transition-colors">Politique de
+                        Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    </script>
+</body>
+
+</html>
