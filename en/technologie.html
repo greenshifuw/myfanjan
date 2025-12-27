@@ -3,15 +3,38 @@
 
 <head>
     <style>
-        .lang-switch { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.875rem; color: #1B365D; text-transform: uppercase; margin-left: 1.5rem; }
-        .lang-switch a { opacity: 0.6; transition: opacity 0.2s; text-decoration: none; }
-        .lang-switch a:hover { opacity: 1; }
-        .lang-switch a.active { opacity: 1; text-decoration: underline; text-underline-offset: 4px; color: #739F78; }
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: #1B365D;
+            text-transform: uppercase;
+            margin-left: 1.5rem;
+        }
+
+        .lang-switch a {
+            opacity: 0.6;
+            transition: opacity 0.2s;
+            text-decoration: none;
+        }
+
+        .lang-switch a:hover {
+            opacity: 1;
+        }
+
+        .lang-switch a.active {
+            opacity: 1;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            color: #739F78;
+        }
     </style>
     <meta charset="UTF-8" />
-    <link rel="icon" href="assets/logo.png" />
+    <link rel="icon" href="../assets/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technologie | MyFanjan</title>
+    <title>Technology | MyFanjan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,7 +84,7 @@
             <div class="flex justify-between items-center">
                 <div class="flex items-center shrink-0">
                     <a href="index.html" class="flex items-center gap-3 group">
-                        <img src="assets/logo.png" alt="MyFanjan Logo"
+                        <img src="../assets/logo.png" alt="MyFanjan Logo"
                             class="w-auto object-contain bg-white rounded-full p-1 transition-all duration-300 h-16"
                             referrerpolicy="no-referrer" />
                         <span
@@ -70,57 +93,51 @@
                 </div>
                 <div class="hidden lg:flex space-x-6 items-center flex-wrap justify-end">
                     <a href="index.html"
-                        class="font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">Accueil</a>
+                        class="font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">Home</a>
                     <a href="vision.html"
                         class="font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">Vision</a>
                     <div class="relative group">
                         <button
                             class="flex items-center gap-1 font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">
-                            Nos solutions <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                            Our Solutions <i data-lucide="chevron-down" class="w-4 h-4"></i>
                         </button>
                         <div
                             class="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl py-2 transform transition-all duration-200 origin-top-left opacity-0 scale-95 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:visible">
                             <a href="solutions-collectivites.html"
-                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Collectivités
-                                & institutions</a>
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Communities & Institutions</a>
                             <a href="solutions-agriculteurs.html"
-                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Agriculteurs
-                                & exploitants</a>
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Farmers & Growers</a>
                             <a href="solutions-particuliers.html"
-                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Particuliers</a>
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Individuals</a>
                             <a href="solutions-entreprises.html"
-                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Entreprises
-                                & RSE</a>
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Companies & CSR</a>
                         </div>
                     </div>
                     <div class="relative group">
                         <button
                             class="flex items-center gap-1 font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">
-                            Mieux nous connaître <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                            About Us <i data-lucide="chevron-down" class="w-4 h-4"></i>
                         </button>
                         <div
                             class="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl py-2 transform transition-all duration-200 origin-top-left opacity-0 scale-95 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:visible">
                             <a href="qui-sommes-nous.html"
-                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Qui
-                                sommes-nous</a>
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Who We Are</a>
                             <a href="notre-histoire.html"
-                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Notre
-                                histoire</a>
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">Our History</a>
                             <a href="equipe.html"
-                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">L'équipe
-                                MyFanjan</a>
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-canopy transition-colors text-sm font-medium">The Team</a>
                         </div>
                     </div>
                     <a href="technologie.html"
-                        class="font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">Technologie</a>
+                        class="font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">Technology</a>
                     <a href="contact.html"
                         class="font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">Contact</a>
 
           <!-- Language Switcher -->
           <div class="lang-switch">
-             <a href="#" class="active">FR</a>
+             <a href="../technologie.html" id="lang-fr" class="opacity-60 hover:opacity-100">FR</a>
              <span class="opacity-60">|</span>
-             <a href="en/technologie.html" id="lang-en" class="opacity-60 hover:opacity-100">EN</a>
+             <a href="#" class="active">EN</a>
           </div>
                 </div>
                 <div class="lg:hidden">
@@ -134,38 +151,39 @@
             <!-- Mobile Menu Content -->
             <div class="px-4 pt-2 pb-6 space-y-1 flex flex-col text-gray-800">
                 <div class="border-b border-gray-100 last:border-0"><a href="index.html"
-                        class="block px-3 py-3 text-base font-bold text-lagoon hover:text-canopy uppercase tracking-wider">Accueil</a>
+                        class="block px-3 py-3 text-base font-bold text-lagoon hover:text-canopy uppercase tracking-wider">Home</a>
                 </div>
                 <div class="border-b border-gray-100 last:border-0"><a href="vision.html"
                         class="block px-3 py-3 text-base font-bold text-lagoon hover:text-canopy uppercase tracking-wider">Vision</a>
                 </div>
                 <div class="border-b border-gray-100 last:border-0">
-                    <div class="px-3 py-3 text-base font-bold text-lagoon uppercase tracking-wider mt-2">Nos solutions
+                    <div class="px-3 py-3 text-base font-bold text-lagoon uppercase tracking-wider mt-2">Our Solutions
                     </div>
                     <div class="pl-6 pb-2 space-y-2">
                         <a href="solutions-collectivites.html"
-                            class="block text-gray-600 hover:text-canopy py-2">Collectivités & institutions</a>
-                        <a href="solutions-agriculteurs.html"
-                            class="block text-gray-600 hover:text-canopy py-2">Agriculteurs & exploitants</a>
-                        <a href="solutions-particuliers.html"
-                            class="block text-gray-600 hover:text-canopy py-2">Particuliers</a>
-                        <a href="solutions-entreprises.html"
-                            class="block text-gray-600 hover:text-canopy py-2">Entreprises & RSE</a>
+                            class="block text-gray-600 hover:text-canopy py-2">Communities >Communities & Institutions
+                            < Institutions</a>
+                                <a href="solutions-agriculteurs.html"
+                                    class="block text-gray-600 hover:text-canopy py-2">Farmers >Agriculteurs &
+                                    exploitants< Growers</a>
+                                        <a href="solutions-particuliers.html"
+                                            class="block text-gray-600 hover:text-canopy py-2">Individuals</a>
+                                        <a href="solutions-entreprises.html"
+                                            class="block text-gray-600 hover:text-canopy py-2">Companies >Entreprises &
+                                            RSE< CSR</a>
                     </div>
                 </div>
                 <div class="border-b border-gray-100 last:border-0">
                     <div class="px-3 py-3 text-base font-bold text-lagoon uppercase tracking-wider mt-2">Mieux nous
                         connaître</div>
                     <div class="pl-6 pb-2 space-y-2">
-                        <a href="qui-sommes-nous.html" class="block text-gray-600 hover:text-canopy py-2">Qui
-                            sommes-nous</a>
-                        <a href="notre-histoire.html" class="block text-gray-600 hover:text-canopy py-2">Notre
-                            histoire</a>
-                        <a href="equipe.html" class="block text-gray-600 hover:text-canopy py-2">L'équipe MyFanjan</a>
+                        <a href="qui-sommes-nous.html" class="block text-gray-600 hover:text-canopy py-2">Who We Are</a>
+                        <a href="notre-histoire.html" class="block text-gray-600 hover:text-canopy py-2">Our History</a>
+                        <a href="equipe.html" class="block text-gray-600 hover:text-canopy py-2">The Team</a>
                     </div>
                 </div>
                 <div class="border-b border-gray-100 last:border-0"><a href="technologie.html"
-                        class="block px-3 py-3 text-base font-bold text-lagoon hover:text-canopy uppercase tracking-wider">Technologie</a>
+                        class="block px-3 py-3 text-base font-bold text-lagoon hover:text-canopy uppercase tracking-wider">Technology</a>
                 </div>
                 <a href="contact.html"
                     class="mt-6 block w-full text-center px-5 py-3 rounded-md font-bold bg-canopy text-white">Contact</a>
@@ -181,7 +199,7 @@
                 <div class="text-center mb-16">
                     <span class="text-earth font-bold tracking-wider uppercase text-sm">Innovation</span>
                     <h2 class="font-display font-bold text-3xl md:text-5xl text-gray-900 mt-2">
-                        Ingénierie de pointe,<br /> fabriquée localement
+                        Advanced Engineering,<br /> Made Locally
                     </h2>
                 </div>
 
@@ -192,9 +210,9 @@
                             class="w-14 h-14 mx-auto bg-gray-100 rounded-full flex items-center justify-center text-gray-700 mb-6">
                             <i data-lucide="pen-tool" class="w-7 h-7"></i>
                         </div>
-                        <h3 class="font-bold text-lg mb-3">Matériaux de qualité</h3>
+                        <h3 class="font-bold text-lg mb-3">Quality Materials</h3>
                         <p class="text-sm text-gray-600">
-                            Utilisation de PETG de grade alimentaire, recyclable et ultra-résistant aux UV.
+                            Use of food-grade PETG, recyclable and ultra-resistant to UV.
                         </p>
                     </div>
 
@@ -206,8 +224,7 @@
                         </div>
                         <h3 class="font-bold text-lg mb-3">MyFanjan Wall Dew™</h3>
                         <p class="text-sm text-gray-600">
-                            Double paroi alvéolée exclusive pour réguler la température nutritive et imitter la rosée
-                            naturelle.
+                            Exclusive double-honeycomb wall to regulate nutrient temperature and mimic natural dew.
                         </p>
                     </div>
 
@@ -217,9 +234,9 @@
                             class="w-14 h-14 mx-auto bg-gray-100 rounded-full flex items-center justify-center text-gray-700 mb-6">
                             <i data-lucide="cpu" class="w-7 h-7"></i>
                         </div>
-                        <h3 class="font-bold text-lg mb-3">Scalabilité</h3>
+                        <h3 class="font-bold text-lg mb-3">Scalability</h3>
                         <p class="text-sm text-gray-600">
-                            De la tour isolée à la ferme urbaine connectée, une technologie adaptable.
+                            From isolated towers to connected urban farms, adaptable technology.
                         </p>
                     </div>
 
@@ -229,9 +246,9 @@
                             class="w-14 h-14 mx-auto bg-gray-100 rounded-full flex items-center justify-center text-gray-700 mb-6">
                             <i data-lucide="map-pin" class="w-7 h-7"></i>
                         </div>
-                        <h3 class="font-bold text-lg mb-3">Made in La Réunion</h3>
+                        <h3 class="font-bold text-lg mb-3">Made in Reunion Island</h3>
                         <p class="text-sm text-gray-600">
-                            Ancrage local fort pour limiter l'empreinte carbone et soutenir l'agriculture locale.
+                            Strong local roots to limit carbon footprint and support local agriculture.
                         </p>
                     </div>
 
@@ -243,8 +260,7 @@
                         </div>
                         <h3 class="font-bold text-lg mb-3">MyFanjanFLOW™</h3>
                         <p class="text-sm text-gray-600">
-                            Un système d’écoulement de l’eau à travers les différents blocs des tours hydroponiques pour
-                            une dispersion optimale des nutriments sur les racines.
+                            A water flow system through different tower blocks for optimal nutrient dispersion to roots.
                         </p>
                     </div>
 
@@ -254,11 +270,10 @@
                             class="w-14 h-14 mx-auto bg-gray-100 rounded-full flex items-center justify-center text-gray-700 mb-6">
                             <i data-lucide="lock" class="w-7 h-7"></i>
                         </div>
-                        <h3 class="font-bold text-lg mb-3">Myfanjan SecureLock™</h3>
+                        <h3 class="font-bold text-lg mb-3">MyFanjan SecureLock™</h3>
                         <p class="text-sm text-gray-600">
-                            Un système de fixation pratique et solide entre les blocs pour augmenter la résistance au
-                            vent
-                            et qui permet de suspendre les tours hydroponiques.
+                            A practical and strong fastening system between blocks to increase wind resistance
+                            and allow hanging of hydroponic towers.
                         </p>
                     </div>
                 </div>
@@ -273,7 +288,7 @@
             <div class="grid md:grid-cols-4 gap-12 mb-12">
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center gap-4 mb-6">
-                        <img src="assets/logo.png" alt="MyFanjan Logo"
+                        <img src="../assets/logo.png" alt="MyFanjan Logo"
                             class="h-24 w-auto object-contain bg-white rounded-full p-2" referrerpolicy="no-referrer" />
                         <span class="font-display font-bold text-4xl md:text-5xl">MyFanjan</span>
                     </div>
@@ -294,13 +309,13 @@
                 <div>
                     <h4 class="font-bold text-lg mb-6">Navigation</h4>
                     <ul class="space-y-3 text-gray-400">
-                        <li><a href="index.html" class="hover:text-canopy transition-colors">Accueil</a></li>
+                        <li><a href="index.html" class="hover:text-canopy transition-colors">Home</a></li>
                         <li><a href="vision.html" class="hover:text-canopy transition-colors">Vision</a></li>
                         <li><a href="solutions-collectivites.html"
                                 class="hover:text-canopy transition-colors">Solutions</a></li>
                         <li><a href="solutions-entreprises.html" class="hover:text-canopy transition-colors">Offres</a>
                         </li>
-                        <li><a href="technologie.html" class="hover:text-canopy transition-colors">Technologie</a></li>
+                        <li><a href="technologie.html" class="hover:text-canopy transition-colors">Technology</a></li>
                     </ul>
                 </div>
                 <div>
@@ -313,11 +328,10 @@
             </div>
             <div
                 class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-                <p class="mb-4 md:mb-0">&copy; <span id="year"></span> MyFanjan. Tous droits réservés.</p>
+                <p class="mb-4 md:mb-0">&copy; <span id="year"></span> MyFanjan. All rights reserved.</p>
                 <div class="flex space-x-6">
-                    <a href="mentions-legales.html" class="hover:text-canopy transition-colors">Mentions Légales</a>
-                    <a href="politique-confidentialite.html" class="hover:text-canopy transition-colors">Politique de
-                        Confidentialité</a>
+                    <a href="mentions-legales.html" class="hover:text-canopy transition-colors">Legal Notice</a>
+                    <a href="politique-confidentialite.html" class="hover:text-canopy transition-colors">Privacy Policy</a>
                 </div>
             </div>
         </div>
@@ -329,13 +343,7 @@
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
     </script>
-<script>
-        // Sets the EN link to the corresponding page in en/ folder
-        const currentPath = window.location.pathname.split("/").pop() || "index.html";
-        const enLink = document.getElementById("lang-en");
-        if (enLink) {
-            enLink.href = "en/" + currentPath;
-        }
-    </script><script> const currentPath = window.location.pathname.split("/").pop() || "index.html"; const enLink = document.getElementById("lang-en"); if (enLink) { enLink.href = "en/" + currentPath; } </script></body>
+    <script> const currentPath = window.location.pathname.split("/").pop() || "index.html"; const frLink = document.getElementById("lang-fr"); if (frLink) { frLink.href = "../" + currentPath; } </script>
+</body>
 
 </html>

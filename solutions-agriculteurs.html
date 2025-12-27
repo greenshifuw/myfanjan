@@ -2,6 +2,12 @@
 <html lang="fr" class="scroll-smooth">
 
 <head>
+    <style>
+        .lang-switch { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.875rem; color: #1B365D; text-transform: uppercase; margin-left: 1.5rem; }
+        .lang-switch a { opacity: 0.6; transition: opacity 0.2s; text-decoration: none; }
+        .lang-switch a:hover { opacity: 1; }
+        .lang-switch a.active { opacity: 1; text-decoration: underline; text-underline-offset: 4px; color: #739F78; }
+    </style>
     <meta charset="UTF-8" />
     <link rel="icon" href="assets/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -104,6 +110,13 @@
                         class="font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">Technologie</a>
                     <a href="contact.html"
                         class="font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">Contact</a>
+
+          <!-- Language Switcher -->
+          <div class="lang-switch">
+             <a href="#" class="active">FR</a>
+             <span class="opacity-60">|</span>
+             <a href="en/solutions-agriculteurs.html" id="lang-en" class="opacity-60 hover:opacity-100">EN</a>
+          </div>
                 </div>
                 <div class="lg:hidden">
                     <button id="mobile-menu-btn" class="text-lagoon focus:outline-none bg-transparent border-0"><i
@@ -280,7 +293,6 @@
                     <ul class="space-y-3 text-gray-400">
                         <li>La Réunion, France</li>
                         <li>contact@myfanjan.com</li>
-                        <li>+262 123 456 789</li>
                     </ul>
                 </div>
             </div>
@@ -302,6 +314,13 @@
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
     </script>
-</body>
+<script>
+        // Sets the EN link to the corresponding page in en/ folder
+        const currentPath = window.location.pathname.split("/").pop() || "index.html";
+        const enLink = document.getElementById("lang-en");
+        if (enLink) {
+            enLink.href = "en/" + currentPath;
+        }
+    </script><script> const currentPath = window.location.pathname.split("/").pop() || "index.html"; const enLink = document.getElementById("lang-en"); if (enLink) { enLink.href = "en/" + currentPath; } </script></body>
 
 </html>
