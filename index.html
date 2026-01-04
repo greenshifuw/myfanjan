@@ -159,8 +159,8 @@
 
           <a href="technologie.html"
             class="navbar-link font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-white">Technologie</a>
-                    <a href="https://www.shop.myfanjan.com" target="_blank"
-                        class="navbar-link font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-white">Boutique</a>
+          <a href="https://www.shop.myfanjan.com" target="_blank"
+            class="navbar-link font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-white">Boutique</a>
           <a href="contact.html"
             class="navbar-link font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-white">Contact</a>
 
@@ -225,6 +225,13 @@
 
         <a href="contact.html"
           class="mt-6 block w-full text-center px-5 py-3 rounded-md font-bold bg-canopy text-white">Contact</a>
+
+        <!-- Mobile Language Switcher -->
+        <div class="mt-6 border-t border-gray-100 pt-6 flex justify-center gap-4">
+          <a href="#" class="font-bold text-canopy">FR</a>
+          <span class="text-gray-300">|</span>
+          <a href="en/index.html" id="lang-en-mobile" class="font-bold text-gray-500 hover:text-canopy">EN</a>
+        </div>
       </div>
     </div>
   </nav>
@@ -553,6 +560,10 @@
     const enLink = document.getElementById("lang-en");
     if (enLink) {
       enLink.href = "en/" + currentPath;
+    }
+    const enLinkMobile = document.getElementById("lang-en-mobile");
+    if (enLinkMobile) {
+      enLinkMobile.href = "en/" + currentPath;
     }
   </script>
 
