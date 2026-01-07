@@ -3,10 +3,33 @@
 
 <head>
     <style>
-        .lang-switch { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.875rem; color: #1B365D; text-transform: uppercase; margin-left: 1.5rem; }
-        .lang-switch a { opacity: 0.6; transition: opacity 0.2s; text-decoration: none; }
-        .lang-switch a:hover { opacity: 1; }
-        .lang-switch a.active { opacity: 1; text-decoration: underline; text-underline-offset: 4px; color: #739F78; }
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: #1B365D;
+            text-transform: uppercase;
+            margin-left: 1.5rem;
+        }
+
+        .lang-switch a {
+            opacity: 0.6;
+            transition: opacity 0.2s;
+            text-decoration: none;
+        }
+
+        .lang-switch a:hover {
+            opacity: 1;
+        }
+
+        .lang-switch a.active {
+            opacity: 1;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            color: #739F78;
+        }
     </style>
     <meta charset="UTF-8" />
     <link rel="icon" href="assets/logo.png" />
@@ -118,12 +141,12 @@
                     <a href="contact.html"
                         class="font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-lagoon">Contact</a>
 
-          <!-- Language Switcher -->
-          <div class="lang-switch">
-             <a href="#" class="active">FR</a>
-             <span class="opacity-60">|</span>
-             <a href="en/notre-histoire.html" id="lang-en" class="opacity-60 hover:opacity-100">EN</a>
-          </div>
+                    <!-- Language Switcher -->
+                    <div class="lang-switch">
+                        <a href="#" class="active">FR</a>
+                        <span class="opacity-60">|</span>
+                        <a href="en/notre-histoire.html" id="lang-en" class="opacity-60 hover:opacity-100">EN</a>
+                    </div>
                 </div>
                 <div class="lg:hidden">
                     <button id="mobile-menu-btn" class="text-lagoon focus:outline-none bg-transparent border-0"><i
@@ -170,13 +193,15 @@
                 </div>
                 <a href="contact.html"
                     class="mt-6 block w-full text-center px-5 py-3 rounded-md font-bold bg-canopy text-white">Contact</a>
-            
+
                 <!-- Mobile Language Switcher -->
                 <div class="mt-6 border-t border-gray-100 pt-6 flex justify-center gap-4">
                     <a href="#" class="font-bold text-canopy">FR</a>
                     <span class="text-gray-300">|</span>
-                    <a href="en/notre-histoire.html" id="lang-en-mobile" class="font-bold text-gray-500 hover:text-canopy">EN</a>
-                </div></div>
+                    <a href="en/notre-histoire.html" id="lang-en-mobile"
+                        class="font-bold text-gray-500 hover:text-canopy">EN</a>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -201,11 +226,22 @@
                         <div class="md:text-right mb-6 md:mb-0 order-1">
                             <span
                                 class="inline-block px-4 py-1 bg-lagoon text-white font-bold rounded-full mb-4 text-sm shadow-md">2020</span>
-                            <h3 class="font-display font-bold text-2xl text-gray-900 mb-3">La Genèse</h3>
+                            <h3 class="font-display font-bold text-2xl text-gray-900 mb-3">Aux origines : une nécessité
+                                révélée par le confinement</h3>
                             <p class="text-gray-600 leading-relaxed">
-                                En 2020, au début du confinement, Franck Ferdinand, fondateur de MyFanjan, a conçu et
-                                testé des prototypes pour permettre de cultiver des légumes et fruits en utilisant le
-                                minimum de ressources disponibles.
+                                En 2020, au moment du premier confinement, alors que chacun découvre les difficultés
+                                qui nous sont imposées dans nos déplacements et nos modes d’approvisionnement, Franck
+                                Ferdinand, ingénieur environnement et écologue de formation, constate la prise de
+                                conscience d’un enjeu devenu palpable : la dépendance alimentaire des territoires
+                                insulaires.
+                            </p>
+                            <p class="text-gray-600 leading-relaxed mt-4">
+                                Habitué depuis plus de vingt ans à travailler sur les questions d’environnement,
+                                d’économie circulaire et d’agriculture urbaine, il voit dans cette période de rupture
+                                non pas une contrainte, mais une opportunité d’expérimentation. Confiné comme tous, il
+                                met à profit ce temps suspendu pour concevoir et tester des prototypes capables de
+                                produire des aliments avec très peu de ressources, directement au plus près des lieux de
+                                vie et en utilisant le minimum de ressources disponibles.
                             </p>
                         </div>
                         <div class="flex justify-center md:items-center order-2">
@@ -225,16 +261,23 @@
                             </div>
                         </div>
                         <div class="mb-6 md:mb-0 order-2 md:order-2">
-                            <h3 class="font-display font-bold text-2xl text-gray-900 mb-3">L'Innovation Frugale</h3>
+                            <h3 class="font-display font-bold text-2xl text-gray-900 mb-3">L’innovation frugale comme
+                                point de départ</h3>
                             <p class="text-gray-600 leading-relaxed">
-                                De l'eau, de l'engrais naturel, du soleil, et grâce à la culture hydroponique plus
-                                besoin de terre, ou d'avoir beaucoup d'espace pour faire pousser ses salades, tomates,
-                                aubergines, brèdes, et autres oignons verts...
+                                De l’eau, un apport nutritif maîtrisé, du soleil… et la maîtrise des techniques
+                                hydroponiques qu’il enseigne déjà à travers des conférences à l’international et déploie
+                                depuis des années dans ses activités de conseil : plus besoin de terre, ni de grandes
+                                surfaces agricoles.
+                            </p>
+                            <p class="text-gray-600 leading-relaxed mt-4">
+                                Salades, tomates, aubergines, brèdes, oignons verts peuvent ainsi pousser verticalement,
+                                au plus près des lieux de vie.
+                                L’idée n’est pas de remplacer l’agriculture existante, mais d’ajouter une nouvelle
+                                brique de production, complémentaire, adaptée aux contraintes urbaines et insulaires.
                             </p>
                             <p class="text-gray-600 mt-4 font-medium border-l-4 border-canopy pl-4">
-                                C'est ainsi qu'est née la première tour MyFanjan, une tour hydroponique conçue pour
-                                donner aux Réunionnais un moyen de cultiver simplement sur leur terrasse en appartement
-                                ou à la maison.
+                                C’est ainsi qu’est née la première tour MyFanjan : une tour hydroponique pensée pour
+                                permettre de cultiver simplement, sur une terrasse, un balcon ou dans un jardin.
                             </p>
                         </div>
                     </div>
@@ -245,15 +288,20 @@
                             <span
                                 class="inline-block px-4 py-1 bg-earth text-white font-bold rounded-full mb-4 text-sm shadow-md">5
                                 ans de R&D</span>
-                            <h3 class="font-display font-bold text-2xl text-gray-900 mb-3">Innovation & Performance</h3>
+                            <h3 class="font-display font-bold text-2xl text-gray-900 mb-3">Cinq années de recherche et
+                                d’amélioration continue</h3>
                             <p class="text-gray-600 leading-relaxed">
-                                Après 5 années de recherche et développement, les tours MyFanjan ont atteint un haut
-                                niveau de maturité technologique, offrant des rendements optimisés pour notre climat.
+                                Loin d’un prototype figé, MyFanjan s’est construit dans le temps.<br>
+                                Depuis 2020, Franck Ferdinand s’appuie sur son expérience de responsable de bureau
+                                d’études en environnement, de consultant international et de formateur en agriculture
+                                urbaine pour améliorer continuellement les performances agronomiques, la durabilité des
+                                matériaux et l’adaptation climatique des tours.
                             </p>
                             <p class="text-gray-600 mt-2">
-                                Les produits MyFanjan sont créés et fabriqués à La Réunion, avec une équipe qui
-                                développe continuellement des solutions pour agrandir la famille des légumes, fleurs,
-                                fruits qui peuvent être cultivés sur un petit espace.
+                                Après cinq années de recherche et développement, les tours MyFanjan atteignent
+                                aujourd’hui un haut niveau de maturité, avec des rendements optimisés même pour des
+                                conditions climatiques difficiles, tout en restant simples d’usage et économes en
+                                ressources.
                             </p>
                         </div>
                         <div class="flex justify-center md:items-center order-2">
@@ -266,19 +314,23 @@
 
                     <!-- Circular Economy Block -->
                     <div class="bg-alabaster rounded-2xl p-8 md:p-12 text-center shadow-inner relative z-10 mt-20">
-                        <h3 class="font-display font-bold text-3xl text-canopy mb-6">100% Locale & Circulaire</h3>
+                        <h3 class="font-display font-bold text-3xl text-canopy mb-6">Une production locale, pensée pour
+                            le territoire</h3>
                         <div class="max-w-3xl mx-auto text-gray-700 leading-relaxed">
                             <p class="mb-6">
-                                Nos tours sont produites localement à partir de matériaux issus du recyclage de
-                                plastiques réunionnais, transformés par une entreprise partenaire.
+                                Les produits MyFanjan sont conçus et fabriqués à La Réunion, dans une logique de
+                                circuits courts et de savoir-faire local.<br>
+                                L’équipe développe en continu de nouvelles solutions pour élargir la diversité des
+                                légumes, fleurs et fruits cultivables sur de très petites surfaces, en cohérence avec
+                                les enjeux d’autonomie alimentaire de l’île.
                             </p>
                             <p class="mb-8 font-semibold">
-                                Chaque tour MyFanjan est donc 100 % locale, durable et circulaire : un produit né ici,
-                                pour nourrir ici.
+                                MyFanjan n’est pas une rupture avec l’existant, mais une innovation complémentaire, née
+                                du terrain, de l’expérience et d’une conviction forte :
                             </p>
                             <div
                                 class="inline-block border-2 border-canopy text-canopy px-6 py-3 rounded-lg font-bold uppercase tracking-wider">
-                                MyFanjan incarne la nouvelle ère de la souveraineté alimentaire.
+                                L’avenir alimentaire de La Réunion se construira aussi verticalement.
                             </div>
                         </div>
                     </div>
