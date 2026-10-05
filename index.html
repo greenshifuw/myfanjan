@@ -11,7 +11,7 @@
       font-size: 0.875rem;
       color: #1B365D;
       text-transform: uppercase;
-      margin-left: 1.5rem;
+      margin-left: 1rem;
     }
 
     .lang-switch a {
@@ -80,6 +80,17 @@
     }
   </script>
   <style>
+    /* Hero : titre + vidéo + texte (vidéo visible dès l'ouverture) */
+    .hero-grid { display: grid; gap: 1.5rem; grid-template-areas: "title" "video" "text"; align-items: center; }
+    .hero-title { grid-area: title; }
+    .hero-video { grid-area: video; }
+    .hero-text { grid-area: text; }
+    @media (min-width: 1024px) {
+      .hero-grid { grid-template-columns: 5fr 6fr; column-gap: 3.5rem; row-gap: 1.5rem;
+        grid-template-areas: "title video" "text video"; }
+      .hero-title { align-self: end; }
+      .hero-text { align-self: start; }
+    }
     /* Smooth scrolling for anchor links */
     html {
       scroll-behavior: smooth;
@@ -94,21 +105,21 @@
   <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center">
-        <div class="flex items-center shrink-0">
+        <div class="flex items-center min-w-0">
           <a href="index.html" class="flex items-center gap-3 group">
             <img id="navbar-logo" src="assets/logo.png" alt="MyFanjan® Logo"
               class="w-auto object-contain bg-white rounded-full p-1 transition-all duration-300 h-20"
               referrerpolicy="no-referrer" />
             <div class="flex flex-col">
               <span id="navbar-text"
-              class="font-display font-bold text-3xl md:text-5xl tracking-tight transition-colors duration-300 text-white">MyFanjan®</span>
-              <span id="navbar-subtitle" class="text-[0.6rem] md:text-xs font-medium tracking-widest uppercase opacity-90 transition-colors duration-300 text-white pl-1 mt-1">est une marque déposée par la société NEOPHYTA</span>
+              class="font-display font-bold text-3xl md:text-4xl tracking-tight transition-colors duration-300 text-white">MyFanjan®</span>
+              <span id="navbar-subtitle" class="text-[0.6rem] font-medium tracking-wider max-w-[12rem] sm:max-w-none leading-snug uppercase opacity-90 transition-colors duration-300 text-white pl-1 mt-1">est une marque déposée par la société NEOPHYTA</span>
             </div>
           </a>
         </div>
 
         <!-- Desktop Menu -->
-        <div class="hidden lg:flex space-x-3 xl:space-x-6 items-center justify-end">
+        <div class="hidden xl:flex space-x-4 items-center justify-end">
 
           <a href="index.html"
             class="navbar-link font-medium text-sm hover:opacity-80 transition-opacity uppercase tracking-wider text-white">Accueil</a>
@@ -176,7 +187,7 @@
         </div>
 
         <!-- Mobile Menu Button -->
-        <div class="lg:hidden">
+        <div class="xl:hidden shrink-0 ml-3">
           <button id="mobile-menu-btn" class="text-white focus:outline-none bg-transparent border-0">
             <i data-lucide="menu" class="w-7 h-7"></i>
           </button>
@@ -186,7 +197,7 @@
 
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu"
-      class="hidden lg:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 animate-fade-in-down h-[90vh] overflow-y-auto">
+      class="hidden xl:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 animate-fade-in-down h-[90vh] overflow-y-auto">
       <div class="px-4 pt-2 pb-6 space-y-1 flex flex-col text-gray-800">
 
         <div class="border-b border-gray-100 last:border-0">
@@ -244,7 +255,7 @@
   <main class="flex-grow">
 
     <!-- Hero -->
-    <div class="relative h-screen flex items-center justify-center overflow-hidden bg-gray-900">
+    <div class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900 pt-28 pb-24">
       <!-- Background Image -->
       <div class="absolute inset-0 z-0">
         <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?q=80&w=2070&auto=format&fit=crop"
@@ -253,27 +264,51 @@
         <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-transparent to-transparent"></div>
       </div>
 
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <h1
-          class="font-display font-extrabold text-4xl sm:text-5xl md:text-7xl tracking-tight mb-6 animate-fade-in-up drop-shadow-lg">
-          L'avenir alimentaire, <br class="hidden md:block" />
-          <span class="text-canopy">vertical et local.</span>
-        </h1>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full">
+        <div class="hero-grid">
+          <h1
+            class="hero-title font-display font-extrabold text-4xl sm:text-5xl xl:text-6xl tracking-tight animate-fade-in-up drop-shadow-lg text-center lg:text-left">
+            L'avenir alimentaire, <br class="hidden md:block" />
+            <span class="text-canopy">vertical et local.</span>
+          </h1>
 
-        <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-100 mb-10 leading-relaxed font-light drop-shadow-md">
-          MyFanjan® déploie des solutions d'agriculture verticale hydroponique innovantes pour transformer nos
-          territoires tropicaux en modèles de résilience et de durabilité.
-        </p>
+          <div class="hero-video animate-fade-in-up">
+            <div class="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20 bg-gray-900 aspect-video">
+              <video id="hero-video" class="w-full h-full" autoplay muted loop playsinline controls preload="auto"
+                poster="assets/video/myfanjan-poster.jpg" aria-label="Vidéo de présentation MyFanjan">
+                <source src="assets/video/myfanjan-presentation.mp4" type="video/mp4" />
+                Votre navigateur ne permet pas de lire cette vidéo.
+                <a href="assets/video/myfanjan-presentation.mp4">Télécharger la vidéo</a>.
+              </video>
+            </div>
+            <div class="mt-3 flex justify-center lg:justify-start">
+              <button type="button" id="hero-sound"
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 hover:bg-white/25 border border-white/30 text-sm font-semibold text-white transition-colors"
+                aria-pressed="false">
+                <span id="hero-sound-icon-off"><i data-lucide="volume-x" class="w-4 h-4"></i></span>
+                <span id="hero-sound-icon-on" class="hidden"><i data-lucide="volume-2" class="w-4 h-4"></i></span>
+                <span id="hero-sound-label">Activer le son</span>
+              </button>
+            </div>
+          </div>
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="solutions-collectivites.html"
-            class="px-8 py-4 bg-canopy text-white rounded-full font-bold shadow-xl hover:bg-white hover:text-canopy transition-all transform hover:-translate-y-1">
-            Découvrir nos solutions
-          </a>
-          <a href="contact.html"
-            class="px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-canopy transition-all transform hover:-translate-y-1">
-            Devenir partenaire
-          </a>
+          <div class="hero-text text-center lg:text-left">
+            <p class="max-w-3xl mx-auto lg:mx-0 text-lg md:text-xl text-gray-100 mb-10 leading-relaxed font-light drop-shadow-md">
+              MyFanjan® déploie des solutions d'agriculture verticale hydroponique innovantes pour transformer nos
+              territoires tropicaux en modèles de résilience et de durabilité.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a href="solutions-collectivites.html"
+                class="px-8 py-4 bg-canopy text-white rounded-full font-bold shadow-xl hover:bg-white hover:text-canopy transition-all transform hover:-translate-y-1 text-center">
+                Découvrir nos solutions
+              </a>
+              <a href="contact.html"
+                class="px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-canopy transition-all transform hover:-translate-y-1 text-center">
+                Devenir partenaire
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -595,6 +630,32 @@
     }
   </script>
 
+  <script>
+    // Vidéo d'accueil : démarre sans le son ; le bouton permet de l'activer / le couper
+    (function () {
+      var v = document.getElementById('hero-video');
+      var btn = document.getElementById('hero-sound');
+      if (!v || !btn) return;
+      var label = document.getElementById('hero-sound-label');
+      var on = document.getElementById('hero-sound-icon-on');
+      var off = document.getElementById('hero-sound-icon-off');
+      v.muted = true;
+      function refresh() {
+        label.textContent = v.muted ? 'Activer le son' : 'Couper le son';
+        on.classList.toggle('hidden', v.muted);
+        off.classList.toggle('hidden', !v.muted);
+        btn.setAttribute('aria-pressed', String(!v.muted));
+      }
+      btn.addEventListener('click', function () {
+        var wasMuted = v.muted;
+        v.muted = !v.muted;
+        if (wasMuted) { v.currentTime = 0; v.play(); }
+        refresh();
+      });
+      v.addEventListener('volumechange', refresh);
+      refresh();
+    })();
+  </script>
 </body>
 
 </html>
