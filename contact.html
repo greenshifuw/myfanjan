@@ -192,7 +192,7 @@
             </div>
           </div>
           <form id="contact-form" action="https://formsubmit.co/contact@myfanjan.com" method="POST" class="flex-[1_1_460px] min-w-0 bg-white text-[#14233A] rounded-[28px] p-7 md:p-11 flex flex-col gap-5 shadow-[0_30px_60px_rgba(5,15,30,0.35)]">
-            <div id="form-success" role="status" class="hidden rounded-xl bg-[#EAF2EB] text-[#2F4E34] font-semibold px-4 py-3">Merci, votre message a bien été envoyé. Nous vous répondrons rapidement.</div>
+            <div id="form-success" role="status" tabindex="-1" class="hidden flex-col items-center justify-center text-center gap-4 min-h-[420px] py-6 outline-none"><span class="w-16 h-16 rounded-full bg-[#EAF2EB] text-canopy-deep flex items-center justify-center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg></span><h2 class="font-display font-extrabold text-2xl md:text-[28px] text-lagoon">Message envoyé</h2><p class="text-base leading-relaxed text-ink max-w-sm">Merci, votre message nous est bien parvenu. Nous vous répondrons rapidement.</p><a href="#" id="form-back" class="font-semibold text-canopy-deep underline underline-offset-4 hover:text-lagoon min-h-[44px] inline-flex items-center">Retour au formulaire</a></div>
             <input type="hidden" name="_subject" id="form-subject" value="Contact MyFanjan®" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_next" value="https://www.myfanjan.com/contact.html?envoye=1" />
@@ -273,10 +273,20 @@
         form.addEventListener('submit', () => {
             document.getElementById('form-subject').value = 'Contact MyFanjan® - ' + document.getElementById('type').value;
         });
+        // Après envoi : le formulaire laisse place à la confirmation
+        const ok = document.getElementById('form-success');
+        const fields = Array.from(form.children).filter((el) => el !== ok && el.type !== 'hidden' && el.name !== '_honey');
+        function showSent(sent) {
+            fields.forEach((el) => el.classList.toggle('hidden', sent));
+            ok.classList.toggle('hidden', !sent);
+            ok.classList.toggle('flex', sent);
+        }
+        document.getElementById('form-back').addEventListener('click', (e) => { e.preventDefault(); form.reset(); showSent(false); document.getElementById('name').focus(); });
         if (new URLSearchParams(window.location.search).get('envoye') === '1') {
-            const ok = document.getElementById('form-success');
-            ok.classList.remove('hidden');
+            showSent(true);
+            history.replaceState(null, '', window.location.pathname);
             ok.scrollIntoView({ block: 'center' });
+            ok.focus({ preventScroll: true });
         }
     </script>
     <script>
