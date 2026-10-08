@@ -202,13 +202,18 @@
               <span class="flex items-center gap-3.5 text-white font-semibold text-[17px]"><span class="w-12 h-12 rounded-[14px] bg-white/10 flex items-center justify-center text-canopy-light"><i data-lucide="map-pin" class="w-[22px] h-[22px]"></i></span>Reunion Island, France</span>
             </div>
           </div>
-          <form id="contact-form" class="flex-[1_1_460px] min-w-0 bg-white text-[#14233A] rounded-[28px] p-7 md:p-11 flex flex-col gap-5 shadow-[0_30px_60px_rgba(5,15,30,0.35)]">
+          <form id="contact-form" action="https://formsubmit.co/contact@myfanjan.com" method="POST" class="flex-[1_1_460px] min-w-0 bg-white text-[#14233A] rounded-[28px] p-7 md:p-11 flex flex-col gap-5 shadow-[0_30px_60px_rgba(5,15,30,0.35)]">
+            <div id="form-success" role="status" class="hidden rounded-xl bg-[#EAF2EB] text-[#2F4E34] font-semibold px-4 py-3">Thank you, your message has been sent. We will get back to you shortly.</div>
+            <input type="hidden" name="_subject" id="form-subject" value="MyFanjan® contact" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://www.myfanjan.com/en/contact.html?sent=1" />
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <div class="flex flex-col gap-2"><label for="name" class="text-sm font-semibold text-lagoon">Full Name</label><input type="text" id="name" class="w-full px-4 py-3.5 min-h-[48px] rounded-xl border border-[#CBD3DD] text-base text-[#14233A] bg-white focus:ring-2 focus:ring-canopy focus:border-transparent outline-none transition-all" placeholder="John Doe" required /></div>
-              <div class="flex flex-col gap-2"><label for="email" class="text-sm font-semibold text-lagoon">Email</label><input type="email" id="email" class="w-full px-4 py-3.5 min-h-[48px] rounded-xl border border-[#CBD3DD] text-base text-[#14233A] bg-white focus:ring-2 focus:ring-canopy focus:border-transparent outline-none transition-all" placeholder="john@example.com" required /></div>
+              <div class="flex flex-col gap-2"><label for="name" class="text-sm font-semibold text-lagoon">Full Name</label><input type="text" id="name" name="name" class="w-full px-4 py-3.5 min-h-[48px] rounded-xl border border-[#CBD3DD] text-base text-[#14233A] bg-white focus:ring-2 focus:ring-canopy focus:border-transparent outline-none transition-all" placeholder="John Doe" required /></div>
+              <div class="flex flex-col gap-2"><label for="email" class="text-sm font-semibold text-lagoon">Email</label><input type="email" id="email" name="email" class="w-full px-4 py-3.5 min-h-[48px] rounded-xl border border-[#CBD3DD] text-base text-[#14233A] bg-white focus:ring-2 focus:ring-canopy focus:border-transparent outline-none transition-all" placeholder="john@example.com" required /></div>
             </div>
-            <div class="flex flex-col gap-2"><label for="type" class="text-sm font-semibold text-lagoon">Who are you?</label><select id="type" class="w-full px-4 py-3.5 min-h-[48px] rounded-xl border border-[#CBD3DD] text-base text-[#14233A] bg-white focus:ring-2 focus:ring-canopy focus:border-transparent outline-none transition-all"><option>I am a local authority</option><option>I am a social landlord</option><option>I am a professional farmer</option><option>I am a company (CSR)</option><option>I am an individual</option></select></div>
-            <div class="flex flex-col gap-2"><label for="message" class="text-sm font-semibold text-lagoon">Message</label><textarea id="message" rows="5" class="w-full px-4 py-3.5 min-h-[48px] rounded-xl border border-[#CBD3DD] text-base text-[#14233A] bg-white focus:ring-2 focus:ring-canopy focus:border-transparent outline-none transition-all resize-y" placeholder="Describe your project..." required></textarea></div>
+            <div class="flex flex-col gap-2"><label for="type" class="text-sm font-semibold text-lagoon">Who are you?</label><select id="type" name="type" class="w-full px-4 py-3.5 min-h-[48px] rounded-xl border border-[#CBD3DD] text-base text-[#14233A] bg-white focus:ring-2 focus:ring-canopy focus:border-transparent outline-none transition-all"><option>I am a local authority</option><option>I am a social landlord</option><option>I am a professional farmer</option><option>I am a company (CSR)</option><option>I am an individual</option></select></div>
+            <div class="flex flex-col gap-2"><label for="message" class="text-sm font-semibold text-lagoon">Message</label><textarea id="message" name="message" rows="5" class="w-full px-4 py-3.5 min-h-[48px] rounded-xl border border-[#CBD3DD] text-base text-[#14233A] bg-white focus:ring-2 focus:ring-canopy focus:border-transparent outline-none transition-all resize-y" placeholder="Describe your project..." required></textarea></div>
             <button type="submit" class="min-h-[52px] rounded-full bg-canopy-deep text-white font-semibold text-base hover:bg-lagoon transition-colors">Send</button>
           </form>
         </div>
@@ -274,19 +279,16 @@
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
 
-        // Form Handling
+        // Formulaire de contact : envoi via FormSubmit (https://formsubmit.co)
         const form = document.getElementById('contact-form');
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const type = document.getElementById('type').value;
-            const message = document.getElementById('message').value;
-
-            const subject = `Contact MyFanjan® - ${type}`;
-            const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-            window.location.href = `mailto:contact@myfanjan.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        form.addEventListener('submit', () => {
+            document.getElementById('form-subject').value = 'MyFanjan® contact - ' + document.getElementById('type').value;
         });
+        if (new URLSearchParams(window.location.search).get('sent') === '1') {
+            const ok = document.getElementById('form-success');
+            ok.classList.remove('hidden');
+            ok.scrollIntoView({ block: 'center' });
+        }
     </script>
     <script> const currentPath = window.location.pathname.split("/").pop() || "index.html"; const frLink = document.getElementById("lang-fr"); if (frLink) { frLink.href = "../" + currentPath; } </script>
 </body>
