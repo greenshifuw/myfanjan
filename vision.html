@@ -51,6 +51,11 @@
                         lagoon: '#1B365D',
                         alabaster: '#F8F9FA',
                         earth: '#7B5E43',
+                        'canopy-deep': '#4E7754',
+                        'canopy-light': '#A9C9AC',
+                        'lagoon-deep': '#132844',
+                        sand: '#F3EEE7',
+                        ink: '#3E4C5E',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -216,168 +221,125 @@
 
     <main class="flex-grow">
 
-        <!-- Vision Section -->
-        <section class="pt-32 pb-24 bg-white min-h-screen">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <span class="text-earth font-bold tracking-wider uppercase text-sm">Vision & Mission</span>
-                    <h2 class="mt-3 font-display font-bold text-3xl md:text-5xl text-lagoon">
-                        Pour une autonomie agricole
-                    </h2>
-                </div>
-
-                <div class="prose prose-lg mx-auto text-gray-600 leading-relaxed">
-                    <p class="font-medium text-xl text-gray-800 mb-8 border-l-4 border-canopy pl-6">
-                        La Réunion importe aujourd’hui près de 85 % de son alimentation. Chaque année, plus de 2,5
-                        milliards d’euros quittent l’île pour approvisionner ses supermarchés.
-                    </p>
-
-                    <p class="mb-6">
-                        Les denrées les plus basiques — fruits, légumes, céréales — proviennent majoritairement
-                        d’Europe, d’ASIE ou de l’océan Indien, rendant notre système vulnérable aux crises mondiales,
-                        aux coûts du transport et aux aléas climatiques.
-                    </p>
-
-                    <p class="mb-12">
-                        Face à cette dépendance, la souveraineté alimentaire est devenue un enjeu stratégique et
-                        écologique majeur. Cultiver localement, c’est garantir l’accès à une alimentation saine, durable
-                        et équitable tout en préservant les emplois et les ressources naturelles de l’île.
-                    </p>
-
-                    <div
-                        class="mb-12 rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.01] transition-transform duration-500">
-                        <img src="assets/vision-greenhouse.jpg" alt="Serre de production MyFanjan®"
-                            class="w-full h-auto object-cover max-h-[500px]">
-                    </div>
-
-                    <div class="bg-alabaster p-8 rounded-2xl mb-12 shadow-sm border border-gray-100">
-                        <h3 class="font-display font-bold text-2xl text-canopy mb-6">Notre vision : une agriculture
-                            autonome à horizon 2035</h3>
-                        <p class="mb-4">
-                            L’ambition de MyFanjan® est de transformer notre Ile par l’agriculture verticale et
-                            connectée, capable de :
-                        </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <div class="mt-1 mr-3 min-w-[20px]">
-                                    <i data-lucide="check" class="text-earth w-5 h-5"></i>
-                                </div>
-                                <span>Produire une part significative de ses légumes localement, toute l’année, sans
-                                    pesticides ni perte de rendement.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="mt-1 mr-3 min-w-[20px]">
-                                    <i data-lucide="check" class="text-earth w-5 h-5"></i>
-                                </div>
-                                <span>Créer des milliers d’emplois qualifiés pour de jeunes agriculteurs, techniciens et
-                                    ingénieurs du vivant.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="mt-1 mr-3 min-w-[20px]">
-                                    <i data-lucide="check" class="text-earth w-5 h-5"></i>
-                                </div>
-                                <span>Réduire la dépendance alimentaire de plus de 30 % en dix ans.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="mt-1 mr-3 min-w-[20px]">
-                                    <i data-lucide="check" class="text-earth w-5 h-5"></i>
-                                </div>
-                                <span>Réintroduire la nature dans la ville : murs, toitures et serres productives
-                                    intégrées à l’espace urbain.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="mt-1 mr-3 min-w-[20px]">
-                                    <i data-lucide="check" class="text-earth w-5 h-5"></i>
-                                </div>
-                                <span>Offrir à chaque citoyen la possibilité de devenir acteur de sa propre
-                                    alimentation.</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <p class="mb-6 font-medium text-gray-800">
-                        Cette révolution verte ne remplace pas l’agriculture traditionnelle : elle la complète, la
-                        renforce et la modernise.
-                    </p>
-
-                    <p class="mb-8">
-                        Ensemble, elles redonnent à La Réunion le pouvoir de se nourrir durablement et de bâtir un
-                        modèle économique résilient.
-                    </p>
-
-                    <div class="text-center p-8 bg-lagoon text-white rounded-2xl shadow-xl">
-                        <i data-lucide="globe" class="mx-auto mb-4 text-blue-300 w-12 h-12"></i>
-                        <p class="text-xl font-display font-bold">
-                            "Dans dix ans, La Réunion pourrait devenir la première île tropicale autosuffisante en
-                            légumes frais — un territoire où innovation, écologie et emploi se conjuguent enfin."
-                        </p>
-                    </div>
-                </div>
+    <section class="bg-lagoon text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 lg:pt-40 pb-20 lg:pb-24">
+        <div class="flex flex-wrap gap-12 lg:gap-x-[72px] items-end">
+          <div class="flex-[1_1_520px] min-w-0 flex flex-col gap-5 animate-fade-in-up">
+            <span class="self-start inline-flex items-center text-[13px] font-semibold tracking-[0.12em] uppercase text-canopy-light border border-canopy-light/45 rounded-full px-3.5 py-2">Vision &amp; Mission</span>
+            <h1 class="font-display font-extrabold text-4xl sm:text-5xl xl:text-[60px] leading-[1.06] tracking-tight">Pour une autonomie <span class="text-canopy-light">agricole.</span></h1>
+            <p class="text-lg md:text-[19px] leading-relaxed text-[#D6DEE8] max-w-xl">Les denrées les plus basiques — fruits, légumes, céréales — proviennent majoritairement d'Europe, d'Asie ou de l'océan Indien, rendant notre système vulnérable aux crises mondiales, aux coûts du transport et aux aléas climatiques.</p>
+          </div>
+          <div class="flex-[1_1_380px] min-w-0 grid grid-cols-2 gap-4">
+            <div class="bg-white/[0.07] border border-white/10 rounded-[20px] p-6 flex flex-col gap-2">
+              <span class="font-display font-extrabold text-4xl md:text-[44px] leading-none text-canopy-light">≈ 85 %</span>
+              <span class="text-[15px] leading-normal text-[#D6DEE8]">de l'alimentation de La Réunion est importée</span>
             </div>
-        </section>
+            <div class="bg-white/[0.07] border border-white/10 rounded-[20px] p-6 flex flex-col gap-2">
+              <span class="font-display font-extrabold text-4xl md:text-[44px] leading-none text-canopy-light">2,5 Md€</span>
+              <span class="text-[15px] leading-normal text-[#D6DEE8]">quittent l'île chaque année pour approvisionner ses supermarchés</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </main>
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-[104px] flex flex-wrap gap-14 lg:gap-x-[72px] items-center">
+        <div class="flex-[1_1_460px] min-w-0 flex flex-col gap-5">
+          <span class="text-[13px] font-bold tracking-[0.14em] uppercase text-earth">Un enjeu stratégique</span>
+          <h2 class="font-display font-extrabold text-3xl md:text-[40px] leading-[1.15] tracking-tight text-lagoon">La souveraineté alimentaire, un enjeu stratégique et écologique majeur.</h2>
+          <p class="text-base md:text-[17px] leading-[1.65] text-ink">La Réunion importe aujourd'hui près de 85 % de son alimentation. Chaque année, plus de 2,5 milliards d'euros quittent l'île pour approvisionner ses supermarchés.</p>
+          <p class="text-base md:text-[17px] leading-[1.65] text-ink">Face à cette dépendance, la souveraineté alimentaire est devenue un enjeu stratégique et écologique majeur. Cultiver localement, c'est garantir l'accès à une alimentation saine, durable et équitable tout en préservant les emplois et les ressources naturelles de l'île.</p>
+        </div>
+        <div class="flex-[1_1_400px] min-w-0">
+          <img src="assets/vision-greenhouse.jpg" alt="Serre de tours hydroponiques" class="w-full h-[420px] lg:h-[520px] object-cover rounded-3xl" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-alabaster">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-[104px] flex flex-col gap-12">
+        <div class="flex flex-col gap-3.5 max-w-3xl">
+          <span class="text-[13px] font-bold tracking-[0.14em] uppercase text-earth">Horizon 2035</span>
+          <h2 class="font-display font-extrabold text-3xl md:text-[40px] leading-[1.15] tracking-tight text-lagoon">Notre vision : une agriculture autonome à horizon 2035</h2>
+          <p class="text-base md:text-[17px] leading-[1.65] text-ink">L'ambition de MyFanjan® est de transformer notre île par l'agriculture verticale et connectée, capable de :</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+          <div class="bg-white rounded-[20px] p-6 flex flex-col gap-3"><span class="font-display font-extrabold text-xl text-canopy">01</span><p class="text-base leading-relaxed text-[#14233A]">Produire une part significative de ses légumes localement, toute l'année, sans pesticides ni perte de rendement.</p></div>
+          <div class="bg-white rounded-[20px] p-6 flex flex-col gap-3"><span class="font-display font-extrabold text-xl text-canopy">02</span><p class="text-base leading-relaxed text-[#14233A]">Créer des milliers d'emplois qualifiés pour de jeunes agriculteurs, techniciens et ingénieurs du vivant.</p></div>
+          <div class="bg-white rounded-[20px] p-6 flex flex-col gap-3"><span class="font-display font-extrabold text-xl text-canopy">03</span><p class="text-base leading-relaxed text-[#14233A]">Réduire la dépendance alimentaire de plus de 30 % en dix ans.</p></div>
+          <div class="bg-white rounded-[20px] p-6 flex flex-col gap-3"><span class="font-display font-extrabold text-xl text-canopy">04</span><p class="text-base leading-relaxed text-[#14233A]">Réintroduire la nature dans la ville : murs, toitures et serres productives intégrées à l'espace urbain.</p></div>
+          <div class="bg-white rounded-[20px] p-6 flex flex-col gap-3"><span class="font-display font-extrabold text-xl text-canopy">05</span><p class="text-base leading-relaxed text-[#14233A]">Offrir à chaque citoyen la possibilité de devenir acteur de sa propre alimentation.</p></div>
+        </div>
+        <div class="flex flex-wrap gap-4 lg:gap-12 text-base md:text-[17px] leading-[1.65] text-ink">
+          <p class="flex-[1_1_400px]">Cette révolution verte ne remplace pas l'agriculture traditionnelle : elle la complète, la renforce et la modernise.</p>
+          <p class="flex-[1_1_400px]">Ensemble, elles redonnent à La Réunion le pouvoir de se nourrir durablement et de bâtir un modèle économique résilient.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-[104px]">
+        <figure class="bg-lagoon rounded-[28px] p-9 md:p-[72px] flex flex-col gap-6">
+          <i data-lucide="quote" class="w-12 h-12 text-canopy-light"></i>
+          <blockquote class="font-display font-bold text-2xl md:text-[34px] leading-[1.35] text-white max-w-4xl">Dans dix ans, La Réunion pourrait devenir la première île tropicale autosuffisante en légumes frais — un territoire où innovation, écologie et emploi se conjuguent enfin.</blockquote>
+          <a href="index.html#solutions" class="inline-flex items-center min-h-[48px] px-6 py-3.5 rounded-full bg-white text-lagoon font-semibold hover:bg-canopy-light transition-colors self-start">Découvrir nos solutions</a>
+        </figure>
+      </div>
+    </section>
+
+  </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white pt-16 pb-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-12 mb-12">
-                <div class="col-span-1 md:col-span-2">
-                    <div class="flex items-center gap-4 mb-6">
-                        <img src="assets/logo.png" alt="MyFanjan® Logo"
-                            class="h-24 w-auto object-contain bg-white rounded-full p-2" referrerpolicy="no-referrer" />
+  <footer class="bg-lagoon-deep text-[#C3CDD9]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[72px] pb-8 flex flex-col gap-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="MyFanjan® Logo" class="w-12 h-12 object-contain bg-white rounded-full p-1" />
             <div class="flex flex-col">
-              <span class="font-display font-bold text-4xl md:text-5xl leading-none">MyFanjan®</span>
-              <span class="text-xs text-gray-400 font-medium tracking-wider uppercase mt-1">est une marque déposée par la société NEOPHYTA</span>
+              <span class="font-display font-extrabold text-[22px] text-white leading-none">MyFanjan®</span>
+              <span class="text-[11px] uppercase tracking-wider mt-1 text-[#9AA8B8]">est une marque déposée par la société NEOPHYTA</span>
             </div>
-                    </div>
-                    <p class="text-gray-400 mb-6 max-w-sm">
-                        Leader de l'agriculture verticale en milieu tropical. Nous transformons les territoires pour une
-                        autonomie alimentaire durable.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.linkedin.com/company/myfanjan" target="_blank" rel="noopener noreferrer"
-                            class="text-gray-400 hover:text-white transition-colors"><i data-lucide="linkedin"
-                                class="w-6 h-6"></i></a>
-                        <a href="https://www.facebook.com/myfanjan" target="_blank" rel="noopener noreferrer"
-                            class="text-gray-400 hover:text-white transition-colors"><i data-lucide="facebook"
-                                class="w-6 h-6"></i></a>
-                        <a href="https://www.instagram.com/myfanjan" target="_blank" rel="noopener noreferrer"
-                            class="text-gray-400 hover:text-white transition-colors"><i data-lucide="instagram"
-                                class="w-6 h-6"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg mb-6">Navigation</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li><a href="index.html" class="hover:text-canopy transition-colors">Accueil</a></li>
-                        <li><a href="vision.html" class="hover:text-canopy transition-colors">Vision</a></li>
-                        <li><a href="solutions-collectivites.html"
-                                class="hover:text-canopy transition-colors">Solutions</a></li>
-                        <li><a href="solutions-entreprises.html" class="hover:text-canopy transition-colors">Offres</a>
-                        </li>
-                        <li><a href="technologie.html" class="hover:text-canopy transition-colors">Technologie</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg mb-6">Contact</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li>La Réunion, France</li>
-                        <li>contact@myfanjan.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div
-                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-                <p class="mb-4 md:mb-0">&copy; <span id="year"></span> MyFanjan®. Tous droits réservés.</p>
-                <div class="flex space-x-6">
-                    <a href="mentions-legales.html" class="hover:text-canopy transition-colors">Mentions Légales</a>
-                    <a href="politique-confidentialite.html" class="hover:text-canopy transition-colors">Politique de
-                        Confidentialité</a>
-                </div>
-            </div>
+          </div>
+          <p class="text-[15px] leading-relaxed">Leader de l'agriculture verticale en milieu tropical. Nous transformons les territoires pour une autonomie alimentaire durable.</p>
+          <div class="flex gap-2">
+              <a href="https://www.linkedin.com/company/myfanjan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-white/10 transition-colors"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+              <a href="https://www.facebook.com/myfanjan" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-white/10 transition-colors"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+              <a href="https://www.instagram.com/myfanjan" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-white/10 transition-colors"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+          </div>
         </div>
-    </footer>
+        <div class="flex flex-col gap-3 text-[15px]">
+          <h4 class="font-display font-bold text-[15px] text-white tracking-wide mb-1">Nos solutions</h4>
+            <a href="solutions-collectivites.html" class="text-[#C3CDD9] hover:text-white transition-colors">Collectivités &amp; institutions</a>
+            <a href="solutions-agriculteurs.html" class="text-[#C3CDD9] hover:text-white transition-colors">Agriculteurs &amp; exploitants</a>
+            <a href="solutions-particuliers.html" class="text-[#C3CDD9] hover:text-white transition-colors">Particuliers</a>
+            <a href="solutions-entreprises.html" class="text-[#C3CDD9] hover:text-white transition-colors">Entreprises &amp; RSE</a>
+        </div>
+        <div class="flex flex-col gap-3 text-[15px]">
+          <h4 class="font-display font-bold text-[15px] text-white tracking-wide mb-1">Mieux nous connaître</h4>
+            <a href="qui-sommes-nous.html" class="text-[#C3CDD9] hover:text-white transition-colors">Qui sommes-nous</a>
+            <a href="notre-histoire.html" class="text-[#C3CDD9] hover:text-white transition-colors">Notre histoire</a>
+            <a href="equipe.html" class="text-[#C3CDD9] hover:text-white transition-colors">L'équipe MyFanjan®</a>
+            <a href="vision.html" class="text-[#C3CDD9] hover:text-white transition-colors">Vision</a>
+            <a href="technologie.html" class="text-[#C3CDD9] hover:text-white transition-colors">Technologie</a>
+        </div>
+        <div class="flex flex-col gap-3 text-[15px]">
+          <h4 class="font-display font-bold text-[15px] text-white tracking-wide mb-1">Contact</h4>
+          <span>La Réunion, France</span>
+          <a href="mailto:contact@myfanjan.com" class="text-canopy-light hover:text-white transition-colors">contact@myfanjan.com</a>
+          <a href="contact.html" class="self-start mt-2 inline-flex items-center min-h-[44px] px-5 py-3 rounded-full bg-canopy-deep text-white font-semibold hover:bg-canopy transition-colors">Devenir partenaire</a>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-wrap gap-3 lg:gap-6 justify-between text-[13px]">
+        <p>&copy; <span id="year"></span> MyFanjan®. Tous droits réservés.</p>
+        <div class="flex gap-6">
+          <a href="mentions-legales.html" class="text-[#C3CDD9] hover:text-white transition-colors">Mentions légales</a>
+          <a href="politique-confidentialite.html" class="text-[#C3CDD9] hover:text-white transition-colors">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
     <script>
         lucide.createIcons();
         document.getElementById('year').textContent = new Date().getFullYear();

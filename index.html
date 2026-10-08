@@ -56,6 +56,11 @@
             lagoon: '#1B365D',
             alabaster: '#F8F9FA',
             earth: '#7B5E43',
+            'canopy-deep': '#4E7754',
+            'canopy-light': '#A9C9AC',
+            'lagoon-deep': '#132844',
+            sand: '#F3EEE7',
+            ink: '#3E4C5E',
           },
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
@@ -255,215 +260,212 @@
   <main class="flex-grow">
 
     <!-- Hero -->
-    <div class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900 pt-28 pb-24">
-      <!-- Background Image -->
-      <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?q=80&w=2070&auto=format&fit=crop"
-          alt="Agriculture Verticale Tropicale" class="w-full h-full object-cover opacity-100" />
-        <div class="absolute inset-0 bg-gray-900/60 mix-blend-multiply"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-transparent to-transparent"></div>
-      </div>
-
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full">
-        <div class="hero-grid">
-          <h1
-            class="hero-title font-display font-extrabold text-4xl sm:text-5xl xl:text-6xl tracking-tight animate-fade-in-up drop-shadow-lg text-center lg:text-left">
-            L'avenir alimentaire, <br class="hidden md:block" />
-            <span class="text-canopy">vertical et local.</span>
-          </h1>
-
-          <div class="hero-video animate-fade-in-up">
-            <div class="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20 bg-gray-900 aspect-video">
-              <video id="hero-video" class="w-full h-full" autoplay muted loop playsinline controls preload="auto"
-                poster="assets/video/myfanjan-poster.jpg" aria-label="Vidéo de présentation MyFanjan">
-                <source src="assets/video/myfanjan-presentation.mp4" type="video/mp4" />
-                Votre navigateur ne permet pas de lire cette vidéo.
-                <a href="assets/video/myfanjan-presentation.mp4">Télécharger la vidéo</a>.
-              </video>
-            </div>
-            <div class="mt-3 flex justify-center lg:justify-start">
-              <button type="button" id="hero-sound"
-                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 hover:bg-white/25 border border-white/30 text-sm font-semibold text-white transition-colors"
-                aria-pressed="false">
-                <span id="hero-sound-icon-off"><i data-lucide="volume-x" class="w-4 h-4"></i></span>
-                <span id="hero-sound-icon-on" class="hidden"><i data-lucide="volume-2" class="w-4 h-4"></i></span>
-                <span id="hero-sound-label">Activer le son</span>
-              </button>
-            </div>
+    <section class="relative bg-lagoon text-white overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 lg:pt-40 pb-16 lg:pb-20 flex flex-wrap gap-12 lg:gap-14 items-center">
+        <div class="flex-[1_1_420px] min-w-0 flex flex-col gap-6 animate-fade-in-up">
+          <span class="self-start inline-flex items-center text-[13px] font-semibold tracking-[0.12em] uppercase text-canopy-light border border-canopy-light/45 rounded-full px-3.5 py-2">Agriculture verticale hydroponique · La Réunion</span>
+          <h1 class="font-display font-extrabold text-4xl sm:text-5xl xl:text-[68px] leading-[1.04] tracking-tight">L'avenir alimentaire,<br />
+            <span class="text-canopy-light">vertical et local.</span></h1>
+          <p class="text-lg md:text-[19px] leading-relaxed text-[#D6DEE8] max-w-xl">MyFanjan® déploie des solutions d'agriculture verticale hydroponique innovantes pour transformer nos territoires tropicaux en modèles de résilience et de durabilité.</p>
+          <div class="flex flex-wrap gap-3.5 mt-2">
+            <a href="#solutions" class="inline-flex items-center gap-2.5 min-h-[48px] px-6 py-3.5 rounded-full bg-white text-lagoon font-semibold hover:bg-canopy-light transition-colors">Découvrir nos solutions <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+            <a href="contact.html" class="inline-flex items-center min-h-[48px] px-6 py-3.5 rounded-full border-[1.5px] border-white/55 text-white font-semibold hover:bg-white hover:text-lagoon transition-colors">Devenir partenaire</a>
           </div>
-
-          <div class="hero-text text-center lg:text-left">
-            <p class="max-w-3xl mx-auto lg:mx-0 text-lg md:text-xl text-gray-100 mb-10 leading-relaxed font-light drop-shadow-md">
-              MyFanjan® déploie des solutions d'agriculture verticale hydroponique innovantes pour transformer nos
-              territoires tropicaux en modèles de résilience et de durabilité.
-            </p>
-
-            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="solutions-collectivites.html"
-                class="px-8 py-4 bg-canopy text-white rounded-full font-bold shadow-xl hover:bg-white hover:text-canopy transition-all transform hover:-translate-y-1 text-center">
-                Découvrir nos solutions
-              </a>
-              <a href="contact.html"
-                class="px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-canopy transition-all transform hover:-translate-y-1 text-center">
-                Devenir partenaire
-              </a>
-            </div>
+        </div>
+        <div class="flex-[1_1_520px] min-w-0 animate-fade-in-up">
+          <div class="rounded-3xl overflow-hidden shadow-[0_30px_60px_rgba(5,15,30,0.45)] bg-lagoon-deep aspect-video">
+            <video id="hero-video" class="w-full h-full" autoplay muted loop playsinline controls preload="auto"
+              poster="assets/video/myfanjan-poster.jpg" aria-label="Vidéo de présentation MyFanjan®">
+              <source src="assets/video/myfanjan-presentation.mp4" type="video/mp4" />
+              Votre navigateur ne permet pas de lire cette vidéo.
+              <a href="assets/video/myfanjan-presentation.mp4">Télécharger la vidéo</a>.
+            </video>
+          </div>
+          <div class="mt-3 flex justify-center lg:justify-start">
+            <button type="button" id="hero-sound"
+              class="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-full bg-white/15 hover:bg-white/25 border border-white/30 text-sm font-semibold text-white transition-colors"
+              aria-pressed="false">
+              <span id="hero-sound-icon-off"><i data-lucide="volume-x" class="w-4 h-4"></i></span>
+              <span id="hero-sound-icon-on" class="hidden"><i data-lucide="volume-2" class="w-4 h-4"></i></span>
+              <span id="hero-sound-label">Activer le son</span>
+            </button>
           </div>
         </div>
       </div>
-
-      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white/70">
-        <i data-lucide="arrow-down" class="w-8 h-8"></i>
-      </div>
-    </div>
-
-    <!-- Stats Section -->
-    <section class="py-20 bg-alabaster relative -mt-10 rounded-t-[3rem] z-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 class="font-display font-bold text-3xl md:text-4xl text-canopy mb-6">
-              La Réunion importe encore l’essentiel de son alimentation.
-            </h2>
-            <p class="text-gray-600 mb-8 leading-relaxed">
-              Notre vision : atteindre la souveraineté alimentaire grâce à l’agriculture verticale hydroponique et
-              connectée — produire localement, toute l’année, en complément de l’agriculture traditionnelle.
-            </p>
-
-            <div class="space-y-6">
-              <div class="flex items-start">
-                <div class="bg-lagoon/10 p-3 rounded-lg mr-4">
-                  <i data-lucide="trending-down" class="text-lagoon w-6 h-6"></i>
-                </div>
-                <div>
-                  <h4 class="font-bold text-lg text-lagoon">Moins de dépendance</h4>
-                  <p class="text-sm text-gray-500">Objectif –30 % d’imports de légumes en 10 ans.</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div class="bg-canopy/10 p-3 rounded-lg mr-4">
-                  <i data-lucide="users" class="text-canopy w-6 h-6"></i>
-                </div>
-                <div>
-                  <h4 class="font-bold text-lg text-canopy">Plus d’emplois</h4>
-                  <p class="text-sm text-gray-500">Des milliers de jeunes agriculteurs formés aux technologies du
-                    vivant.</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div class="bg-earth/10 p-3 rounded-lg mr-4">
-                  <i data-lucide="heart" class="text-earth w-6 h-6"></i>
-                </div>
-                <div>
-                  <h4 class="font-bold text-lg text-earth">Mieux manger</h4>
-                  <p class="text-sm text-gray-500">Accès local à des légumes frais, sans pesticides, toute l’année.</p>
-                </div>
-              </div>
-            </div>
+      <div class="border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div class="flex flex-col gap-1">
+            <span class="font-display font-extrabold text-3xl md:text-[40px] text-canopy-light">jusqu'à –90 %</span>
+            <span class="text-[15px] text-[#D6DEE8]">d'eau consommée par rapport à l'agriculture traditionnelle</span>
           </div>
-
-          <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
-            <h3 class="text-center font-display font-semibold text-gray-700 mb-6">Consommation d'eau (L/kg produit)</h3>
-            <!-- Simplified Bar Chart Visual -->
-            <div class="h-[300px] w-full flex items-end justify-center gap-8 relative px-4">
-              <!-- Grid -->
-              <div
-                class="absolute inset-0 flex flex-col justify-between text-gray-400 text-xs pointer-events-none pb-8 pl-8">
-                <div class="border-b border-gray-200 h-full w-full"></div>
-              </div>
-
-              <!-- Bar 1 -->
-              <div class="flex flex-col items-center w-20 relative group">
-                <div class="text-sm font-bold text-gray-600 mb-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  100L</div>
-                <div class="w-full bg-gray-400 rounded-t-lg h-[250px] relative"></div>
-                <div class="mt-2 text-xs font-bold text-gray-500 text-center">Agriculture Std.</div>
-              </div>
-
-              <!-- Bar 2 -->
-              <div class="flex flex-col items-center w-20 relative group">
-                <div class="text-sm font-bold text-lagoon mb-2 opacity-0 group-hover:opacity-100 transition-opacity">10L
-                </div>
-                <div class="w-full bg-lagoon rounded-t-lg h-[25px] relative"></div>
-                <div class="mt-2 text-xs font-bold text-gray-500 text-center">MyFanjan®</div>
-              </div>
-            </div>
-            <p class="text-center text-xs text-gray-400 mt-4 italic">L'hydroponie permet d'économiser jusqu'à 90% d'eau
-              par rapport à l'agriculture traditionnelle.</p>
+          <div class="flex flex-col gap-1">
+            <span class="font-display font-extrabold text-3xl md:text-[40px] text-canopy-light">jusqu'à ×40</span>
+            <span class="text-[15px] text-[#D6DEE8]">de production au m² grâce à la verticalité</span>
+          </div>
+          <div class="flex flex-col gap-1">
+            <span class="font-display font-extrabold text-3xl md:text-[40px] text-canopy-light">Toute l'année</span>
+            <span class="text-[15px] text-[#D6DEE8]">des légumes frais, locaux et sans pesticides</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Guide Section -->
-    <section class="py-20 bg-white shadow-[0_-20px_40px_-20px_rgba(0,0,0,0.05)] relative z-30">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gradient-to-br from-lagoon to-canopy rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8">
-          <div class="text-white flex-1">
-            <h2 class="font-display font-bold text-3xl md:text-4xl mb-4">Le Guide MyFanjan®</h2>
-            <p class="text-lg text-white/90 leading-relaxed mb-0">
-              Découvrez notre <strong>Guide Complet pour l'Hydroponie et l'Aquaponie</strong>. Un recueil de ressources, de tutoriels et de conseils d'experts pour maîtriser votre production avec succès, accessible à tous.
-            </p>
+    <!-- Vision -->
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-[104px] flex flex-wrap gap-14 lg:gap-x-[72px]">
+        <div class="flex-[1_1_400px] min-w-0 flex flex-col gap-5">
+          <span class="text-[13px] font-bold tracking-[0.14em] uppercase text-earth">Notre vision</span>
+          <h2 class="font-display font-extrabold text-3xl md:text-[44px] leading-[1.12] tracking-tight text-lagoon">La Réunion importe encore l'essentiel de son alimentation.</h2>
+          <p class="text-lg leading-[1.65] text-ink">Notre vision : atteindre la souveraineté alimentaire grâce à l'agriculture verticale hydroponique et connectée — produire localement, toute l'année, en complément de l'agriculture traditionnelle.</p>
+          <a href="vision.html" class="self-start inline-flex items-center gap-2 min-h-[44px] font-semibold text-canopy-deep hover:text-lagoon transition-colors">Lire notre vision <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+        </div>
+        <div class="flex-[1_1_460px] min-w-0 flex flex-col">
+          <div class="flex gap-6 py-6 border-t border-[#E6EAEF]">
+            <span class="font-display font-extrabold text-[22px] text-canopy w-10 shrink-0">01</span>
+            <div class="flex flex-col gap-1.5">
+              <h3 class="font-display font-bold text-[21px] text-lagoon">Moins de dépendance</h3>
+              <p class="text-base leading-relaxed text-ink">Objectif –30 % d'imports de légumes en 10 ans.</p>
+            </div>
           </div>
-          <div class="flex-shrink-0">
-            <a href="https://www.guide.myfanjan.com" target="_blank" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-lagoon rounded-full font-bold shadow-xl hover:bg-gray-50 hover:scale-105 transition-transform duration-300">
-              <i data-lucide="book-open" class="w-5 h-5"></i>
-              Accéder au Guide
-            </a>
+          <div class="flex gap-6 py-6 border-t border-[#E6EAEF]">
+            <span class="font-display font-extrabold text-[22px] text-canopy w-10 shrink-0">02</span>
+            <div class="flex flex-col gap-1.5">
+              <h3 class="font-display font-bold text-[21px] text-lagoon">Plus d'emplois</h3>
+              <p class="text-base leading-relaxed text-ink">Des milliers de jeunes agriculteurs formés aux technologies du vivant.</p>
+            </div>
+          </div>
+          <div class="flex gap-6 py-6 border-t border-[#E6EAEF] border-b">
+            <span class="font-display font-extrabold text-[22px] text-canopy w-10 shrink-0">03</span>
+            <div class="flex flex-col gap-1.5">
+              <h3 class="font-display font-bold text-[21px] text-lagoon">Mieux manger</h3>
+              <p class="text-base leading-relaxed text-ink">Accès local à des légumes frais, sans pesticides, toute l'année.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 lg:pb-[104px]">
+        <div class="bg-alabaster rounded-3xl p-8 md:p-10 flex flex-wrap gap-8 lg:gap-x-14 items-center">
+          <div class="flex-[1_1_300px] min-w-0 flex flex-col gap-2.5">
+            <h3 class="font-display font-bold text-[22px] text-lagoon">Consommation d'eau (L/kg produit)</h3>
+            <p class="text-base leading-relaxed text-ink">L'hydroponie permet d'économiser jusqu'à 90 % d'eau par rapport à l'agriculture traditionnelle.</p>
+          </div>
+          <div class="flex-[2_1_460px] min-w-0 flex flex-col gap-[18px]">
+            <div class="flex flex-col gap-2">
+              <div class="flex justify-between text-[15px] font-semibold text-ink"><span>Agriculture standard</span><span>100 L</span></div>
+              <div class="h-[18px] rounded-full bg-[#E6EAEF]"><div class="w-full h-full rounded-full bg-[#8A94A3]"></div></div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="flex justify-between text-[15px] font-semibold text-lagoon"><span>MyFanjan®</span><span>10 L</span></div>
+              <div class="h-[18px] rounded-full bg-[#E6EAEF]"><div class="w-[10%] h-full rounded-full bg-lagoon"></div></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Solutions Section -->
-    <section class="pt-32 pb-24 bg-gradient-to-b from-alabaster to-white min-h-screen">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="mb-16 md:text-center max-w-3xl mx-auto">
-          <span class="text-canopy font-bold tracking-wider uppercase text-sm">Nos Solutions</span>
-          <h2 class="font-display font-bold text-3xl md:text-5xl text-gray-900 mt-2">
-            La performance verticale <span class="text-canopy">au service du vivant.</span>
-          </h2>
+    <!-- Solutions -->
+    <section id="solutions" class="bg-alabaster scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-[104px] flex flex-col gap-12">
+        <div class="flex flex-wrap gap-4 lg:gap-12 items-end justify-between">
+          <div class="flex flex-col gap-3.5 max-w-2xl">
+            <span class="text-[13px] font-bold tracking-[0.14em] uppercase text-earth">Nos solutions</span>
+            <h2 class="font-display font-extrabold text-3xl md:text-[44px] leading-[1.12] tracking-tight text-lagoon">Une offre pour chaque acteur du territoire.</h2>
+          </div>
+          <a href="contact.html" class="inline-flex items-center gap-2 min-h-[44px] font-semibold text-canopy-deep hover:text-lagoon transition-colors">Nous contacter <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
         </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div
-            class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-canopy hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
-            <div class="mb-6 p-4 bg-green-50 rounded-xl inline-block group-hover:bg-canopy transition-colors">
-              <i data-lucide="droplet" class="text-canopy group-hover:text-white w-8 h-8"></i>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <a href="solutions-collectivites.html" class="group bg-white rounded-[20px] overflow-hidden flex flex-col shadow-[0_1px_2px_rgba(20,35,58,0.06),0_8px_24px_rgba(20,35,58,0.06)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="h-[200px] overflow-hidden"><img src="assets/collectivites.jpg" alt="Projet de jardin vertical en milieu urbain" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" /></div>
+            <div class="p-6 flex flex-col gap-2.5 grow">
+              <span class="text-xs font-bold tracking-[0.1em] uppercase text-canopy-deep">Collectivités &amp; institutions</span>
+              <h3 class="font-display font-bold text-xl leading-snug text-lagoon">Projets pédagogiques &amp; urbains</h3>
+              <p class="text-[15px] leading-relaxed text-ink">Verdir les espaces, sensibiliser les publics, valoriser l'image de marque des institutions publiques.</p>
+              <span class="mt-auto pt-2 font-semibold text-[15px] text-lagoon group-hover:text-canopy-deep transition-colors">En savoir plus →</span>
             </div>
-            <h3 class="font-display font-bold text-2xl text-gray-900 mb-4">Culture Hydroponique</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Un système en circuit fermé où l'eau chargée de nutriments circule avec précision, éliminant le besoin de
-              terre arable et de traitements chimiques lourds.
-            </p>
+          </a>
+          <a href="solutions-agriculteurs.html" class="group bg-white rounded-[20px] overflow-hidden flex flex-col shadow-[0_1px_2px_rgba(20,35,58,0.06),0_8px_24px_rgba(20,35,58,0.06)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="h-[200px] overflow-hidden"><img src="assets/agriculteurs.jpg" alt="Tours de culture hydroponique sous serre" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" /></div>
+            <div class="p-6 flex flex-col gap-2.5 grow">
+              <span class="text-xs font-bold tracking-[0.1em] uppercase text-canopy-deep">Agriculteurs &amp; exploitants</span>
+              <h3 class="font-display font-bold text-xl leading-snug text-lagoon">Unités de production intensives</h3>
+              <p class="text-[15px] leading-relaxed text-ink">Rentabilité accrue, ergonomie de travail, gestion optimisée des ressources pour les professionnels.</p>
+              <span class="mt-auto pt-2 font-semibold text-[15px] text-lagoon group-hover:text-canopy-deep transition-colors">En savoir plus →</span>
+            </div>
+          </a>
+          <a href="solutions-particuliers.html" class="group bg-white rounded-[20px] overflow-hidden flex flex-col shadow-[0_1px_2px_rgba(20,35,58,0.06),0_8px_24px_rgba(20,35,58,0.06)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="h-[200px] overflow-hidden"><img src="assets/particuliers-tower.jpg" alt="Tour de culture domestique sur terrasse" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" /></div>
+            <div class="p-6 flex flex-col gap-2.5 grow">
+              <span class="text-xs font-bold tracking-[0.1em] uppercase text-canopy-deep">Particuliers</span>
+              <h3 class="font-display font-bold text-xl leading-snug text-lagoon">Systèmes domestiques</h3>
+              <p class="text-[15px] leading-relaxed text-ink">Accès direct à une alimentation ultra-fraîche, saine et locale sur balcon ou terrasse.</p>
+              <span class="mt-auto pt-2 font-semibold text-[15px] text-lagoon group-hover:text-canopy-deep transition-colors">En savoir plus →</span>
+            </div>
+          </a>
+          <a href="solutions-entreprises.html" class="group bg-white rounded-[20px] overflow-hidden flex flex-col shadow-[0_1px_2px_rgba(20,35,58,0.06),0_8px_24px_rgba(20,35,58,0.06)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="h-[200px] overflow-hidden"><img src="assets/entreprises.jpg" alt="Jardin potager vertical en entreprise" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" /></div>
+            <div class="p-6 flex flex-col gap-2.5 grow">
+              <span class="text-xs font-bold tracking-[0.1em] uppercase text-canopy-deep">Entreprises &amp; RSE</span>
+              <h3 class="font-display font-bold text-xl leading-snug text-lagoon">Faites pousser votre RSE</h3>
+              <p class="text-[15px] leading-relaxed text-ink">Un jardin potager vertical, clé en main, à installer sur site.</p>
+              <span class="mt-auto pt-2 font-semibold text-[15px] text-lagoon group-hover:text-canopy-deep transition-colors">En savoir plus →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologie -->
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-[104px] flex flex-wrap gap-14 lg:gap-x-[72px] items-center">
+        <div class="flex-[1_1_380px] min-w-0">
+          <img src="assets/technologie-towers.jpg" alt="Tours hydroponiques MyFanjan® sous serre" class="w-full h-[420px] lg:h-[560px] object-cover rounded-3xl" loading="lazy" />
+        </div>
+        <div class="flex-[1_1_460px] min-w-0 flex flex-col gap-8">
+          <div class="flex flex-col gap-3.5">
+            <span class="text-[13px] font-bold tracking-[0.14em] uppercase text-earth">Technologie</span>
+            <h2 class="font-display font-extrabold text-3xl md:text-[44px] leading-[1.12] tracking-tight text-lagoon">La performance verticale <span class="text-canopy-deep">au service du vivant.</span></h2>
           </div>
-
-          <!-- Card 2 -->
-          <div
-            class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-lagoon hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
-            <div class="mb-6 p-4 bg-blue-50 rounded-xl inline-block group-hover:bg-lagoon transition-colors">
-              <i data-lucide="layers" class="text-lagoon group-hover:text-white w-8 h-8"></i>
+          <div class="flex gap-5">
+            <span class="w-[52px] h-[52px] rounded-[14px] bg-[#EAF2EB] text-canopy-deep flex items-center justify-center shrink-0"><svg class="w-[26px] h-[26px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path></svg></span>
+            <div class="flex flex-col gap-1.5">
+              <h3 class="font-display font-bold text-xl text-lagoon">Culture hydroponique</h3>
+              <p class="text-base leading-relaxed text-ink">Un système en circuit fermé où l'eau chargée de nutriments circule avec précision, éliminant le besoin de terre arable et de traitements chimiques lourds.</p>
             </div>
-            <h3 class="font-display font-bold text-2xl text-gray-900 mb-4">Optimisation Foncière</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Produisez jusqu'à 40 fois plus au m² grâce à la verticalité. Une solution idéale pour densifier la
-              production en zones urbaines restreintes.
-            </p>
           </div>
-
-          <!-- Card 3 -->
-          <div
-            class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-earth hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
-            <div class="mb-6 p-4 bg-orange-50 rounded-xl inline-block group-hover:bg-earth transition-colors">
-              <i data-lucide="sun" class="text-earth group-hover:text-white w-8 h-8"></i>
+          <div class="flex gap-5">
+            <span class="w-[52px] h-[52px] rounded-[14px] bg-[#EAF2EB] text-canopy-deep flex items-center justify-center shrink-0"><svg class="w-[26px] h-[26px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="5" rx="1.5"></rect><rect x="4" y="10" width="16" height="5" rx="1.5"></rect><rect x="4" y="17" width="16" height="4" rx="1.5"></rect></svg></span>
+            <div class="flex flex-col gap-1.5">
+              <h3 class="font-display font-bold text-xl text-lagoon">Optimisation foncière</h3>
+              <p class="text-base leading-relaxed text-ink">Produisez jusqu'à 40 fois plus au m² grâce à la verticalité. Une solution idéale pour densifier la production en zones urbaines restreintes.</p>
             </div>
-            <h3 class="font-display font-bold text-2xl text-gray-900 mb-4">Résilience Tropicale</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Des systèmes conçus spécifiquement pour résister à la chaleur et à l'humidité intenses, garantissant une
-              production stable toute l'année.
-            </p>
+          </div>
+          <div class="flex gap-5">
+            <span class="w-[52px] h-[52px] rounded-[14px] bg-[#EAF2EB] text-canopy-deep flex items-center justify-center shrink-0"><svg class="w-[26px] h-[26px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.9 4.9 1.4 1.4"></path><path d="m17.7 17.7 1.4 1.4"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.3 17.7-1.4 1.4"></path><path d="m19.1 4.9-1.4 1.4"></path></svg></span>
+            <div class="flex flex-col gap-1.5">
+              <h3 class="font-display font-bold text-xl text-lagoon">Résilience tropicale</h3>
+              <p class="text-base leading-relaxed text-ink">Des systèmes conçus spécifiquement pour résister à la chaleur et à l'humidité intenses, garantissant une production stable toute l'année.</p>
+            </div>
+          </div>
+          <a href="technologie.html" class="self-start inline-flex items-center min-h-[48px] px-6 py-3.5 rounded-full bg-lagoon text-white font-semibold hover:bg-canopy-deep transition-colors">Découvrir la technologie</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guide -->
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 lg:pb-[104px]">
+        <div class="bg-sand rounded-[28px] overflow-hidden flex flex-wrap">
+          <div class="flex-[1_1_460px] min-w-0 p-8 md:p-14 flex flex-col gap-[18px]">
+            <span class="text-[13px] font-bold tracking-[0.14em] uppercase text-[#6A4F37]">Ressource gratuite</span>
+            <h2 class="font-display font-extrabold text-3xl md:text-[40px] leading-[1.15] tracking-tight text-lagoon">Le Guide MyFanjan®</h2>
+            <p class="text-[17px] leading-[1.65] text-[#4A3B2C]">Découvrez notre Guide Complet pour l'Hydroponie et l'Aquaponie. Un recueil de ressources, de tutoriels et de conseils d'experts pour maîtriser votre production avec succès, accessible à tous.</p>
+            <div class="flex flex-wrap gap-3.5 mt-2">
+              <a href="https://www.guide.myfanjan.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 min-h-[48px] px-6 py-3.5 rounded-full bg-earth text-white font-semibold hover:bg-[#6A4F37] transition-colors">Accéder au Guide <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg></a>
+              <a href="https://www.shop.myfanjan.com" target="_blank" rel="noopener" class="inline-flex items-center min-h-[48px] px-2 py-3.5 font-semibold text-[#6A4F37] hover:text-lagoon transition-colors">Voir la boutique →</a>
+            </div>
+          </div>
+          <div class="flex-[1_1_380px] min-w-0 min-h-[320px]">
+            <img src="images/hero.jpg" alt="Semis en godets" class="w-full h-full min-h-[320px] object-cover" loading="lazy" />
           </div>
         </div>
       </div>
@@ -472,66 +474,51 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white pt-16 pb-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-4 gap-12 mb-12">
-
-        <div class="col-span-1 md:col-span-2">
-          <div class="flex items-center gap-4 mb-6">
-            <img src="assets/logo.png" alt="MyFanjan® Logo" class="h-24 w-auto object-contain bg-white rounded-full p-2"
-              referrerpolicy="no-referrer" />
+  <footer class="bg-lagoon-deep text-[#C3CDD9]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[72px] pb-8 flex flex-col gap-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="MyFanjan® Logo" class="w-12 h-12 object-contain bg-white rounded-full p-1" />
             <div class="flex flex-col">
-              <span class="font-display font-bold text-4xl md:text-5xl leading-none">MyFanjan®</span>
-              <span class="text-xs text-gray-400 font-medium tracking-wider uppercase mt-1">est une marque déposée par la société NEOPHYTA</span>
+              <span class="font-display font-extrabold text-[22px] text-white leading-none">MyFanjan®</span>
+              <span class="text-[11px] uppercase tracking-wider mt-1 text-[#9AA8B8]">est une marque déposée par la société NEOPHYTA</span>
             </div>
           </div>
-          <p class="text-gray-400 mb-6 max-w-sm">
-            Leader de l'agriculture verticale en milieu tropical. Nous transformons les territoires pour une autonomie
-            alimentaire durable.
-          </p>
-          <div class="flex space-x-4">
-            <a href="https://www.linkedin.com/company/myfanjan" target="_blank" rel="noopener noreferrer"
-              class="text-gray-400 hover:text-white transition-colors">
-              <i data-lucide="linkedin" class="w-6 h-6"></i>
-            </a>
-            <a href="https://www.facebook.com/myfanjan" target="_blank" rel="noopener noreferrer"
-              class="text-gray-400 hover:text-white transition-colors">
-              <i data-lucide="facebook" class="w-6 h-6"></i>
-            </a>
-            <a href="https://www.instagram.com/myfanjan" target="_blank" rel="noopener noreferrer"
-              class="text-gray-400 hover:text-white transition-colors">
-              <i data-lucide="instagram" class="w-6 h-6"></i>
-            </a>
+          <p class="text-[15px] leading-relaxed">Leader de l'agriculture verticale en milieu tropical. Nous transformons les territoires pour une autonomie alimentaire durable.</p>
+          <div class="flex gap-2">
+              <a href="https://www.linkedin.com/company/myfanjan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-white/10 transition-colors"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+              <a href="https://www.facebook.com/myfanjan" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-white/10 transition-colors"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+              <a href="https://www.instagram.com/myfanjan" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-white/10 transition-colors"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
           </div>
         </div>
-
-        <div>
-          <h4 class="font-bold text-lg mb-6">Navigation</h4>
-          <ul class="space-y-3 text-gray-400">
-            <li><a href="index.html" class="hover:text-canopy transition-colors">Accueil</a></li>
-            <li><a href="vision.html" class="hover:text-canopy transition-colors">Vision</a></li>
-            <li><a href="solutions-collectivites.html" class="hover:text-canopy transition-colors">Solutions</a></li>
-            <li><a href="solutions-entreprises.html" class="hover:text-canopy transition-colors">Offres</a></li>
-            <li><a href="technologie.html" class="hover:text-canopy transition-colors">Technologie</a></li>
-          </ul>
+        <div class="flex flex-col gap-3 text-[15px]">
+          <h4 class="font-display font-bold text-[15px] text-white tracking-wide mb-1">Nos solutions</h4>
+            <a href="solutions-collectivites.html" class="text-[#C3CDD9] hover:text-white transition-colors">Collectivités &amp; institutions</a>
+            <a href="solutions-agriculteurs.html" class="text-[#C3CDD9] hover:text-white transition-colors">Agriculteurs &amp; exploitants</a>
+            <a href="solutions-particuliers.html" class="text-[#C3CDD9] hover:text-white transition-colors">Particuliers</a>
+            <a href="solutions-entreprises.html" class="text-[#C3CDD9] hover:text-white transition-colors">Entreprises &amp; RSE</a>
         </div>
-
-        <div>
-          <h4 class="font-bold text-lg mb-6">Contact</h4>
-          <ul class="space-y-3 text-gray-400">
-            <li>La Réunion, France</li>
-            <li>contact@myfanjan.com</li>
-          </ul>
+        <div class="flex flex-col gap-3 text-[15px]">
+          <h4 class="font-display font-bold text-[15px] text-white tracking-wide mb-1">Mieux nous connaître</h4>
+            <a href="qui-sommes-nous.html" class="text-[#C3CDD9] hover:text-white transition-colors">Qui sommes-nous</a>
+            <a href="notre-histoire.html" class="text-[#C3CDD9] hover:text-white transition-colors">Notre histoire</a>
+            <a href="equipe.html" class="text-[#C3CDD9] hover:text-white transition-colors">L'équipe MyFanjan®</a>
+            <a href="vision.html" class="text-[#C3CDD9] hover:text-white transition-colors">Vision</a>
+            <a href="technologie.html" class="text-[#C3CDD9] hover:text-white transition-colors">Technologie</a>
+        </div>
+        <div class="flex flex-col gap-3 text-[15px]">
+          <h4 class="font-display font-bold text-[15px] text-white tracking-wide mb-1">Contact</h4>
+          <span>La Réunion, France</span>
+          <a href="mailto:contact@myfanjan.com" class="text-canopy-light hover:text-white transition-colors">contact@myfanjan.com</a>
+          <a href="contact.html" class="self-start mt-2 inline-flex items-center min-h-[44px] px-5 py-3 rounded-full bg-canopy-deep text-white font-semibold hover:bg-canopy transition-colors">Devenir partenaire</a>
         </div>
       </div>
-
-      <div
-        class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-        <p class="mb-4 md:mb-0">&copy; <span id="year"></span> MyFanjan®. Tous droits réservés.</p>
-        <div class="flex space-x-6">
-          <a href="mentions-legales.html" class="hover:text-canopy transition-colors">Mentions Légales</a>
-          <a href="politique-confidentialite.html" class="hover:text-canopy transition-colors">Politique de
-            Confidentialité</a>
+      <div class="border-t border-white/10 pt-6 flex flex-wrap gap-3 lg:gap-6 justify-between text-[13px]">
+        <p>&copy; <span id="year"></span> MyFanjan®. Tous droits réservés.</p>
+        <div class="flex gap-6">
+          <a href="mentions-legales.html" class="text-[#C3CDD9] hover:text-white transition-colors">Mentions légales</a>
+          <a href="politique-confidentialite.html" class="text-[#C3CDD9] hover:text-white transition-colors">Politique de confidentialité</a>
         </div>
       </div>
     </div>

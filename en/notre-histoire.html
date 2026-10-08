@@ -51,6 +51,11 @@
                         lagoon: '#1B365D',
                         alabaster: '#F8F9FA',
                         earth: '#7B5E43',
+                        'canopy-deep': '#4E7754',
+                        'canopy-light': '#A9C9AC',
+                        'lagoon-deep': '#132844',
+                        sand: '#F3EEE7',
+                        ink: '#3E4C5E',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -199,172 +204,108 @@
 
     <main class="flex-grow">
 
-        <!-- History Section -->
-        <section class="pt-32 pb-24 bg-white min-h-screen">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <span class="text-canopy font-bold tracking-wider uppercase text-sm">Journey</span>
-                    <h2 class="font-display font-bold text-3xl md:text-5xl text-gray-900 mt-2">
-                        Our History
-                    </h2>
-                </div>
+    <section class="bg-lagoon text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 lg:pt-40 pb-20 lg:pb-24">
+        <div class="flex flex-col gap-5 animate-fade-in-up">
+          <span class="self-start inline-flex items-center text-[13px] font-semibold tracking-[0.12em] uppercase text-canopy-light border border-canopy-light/45 rounded-full px-3.5 py-2">Journey</span>
+          <h1 class="font-display font-extrabold text-4xl sm:text-5xl xl:text-[60px] leading-[1.06] tracking-tight max-w-4xl">Our History</h1>
+          <nav aria-label="In this section" class="flex flex-wrap gap-2.5 mt-3"><a href="qui-sommes-nous.html" class="inline-flex items-center min-h-[44px] px-5 rounded-full border border-white/35 text-white font-semibold text-[15px] hover:bg-white/10 transition-colors">Who We Are</a><a href="notre-histoire.html" aria-current="page" class="inline-flex items-center min-h-[44px] px-5 rounded-full bg-white text-lagoon font-semibold text-[15px]">Our History</a><a href="equipe.html" class="inline-flex items-center min-h-[44px] px-5 rounded-full border border-white/35 text-white font-semibold text-[15px] hover:bg-white/10 transition-colors">The Team</a></nav>
+        </div>
+      </div>
+    </section>
 
-                <div class="relative">
-                    <!-- Vertical line for timeline effect -->
-                    <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 hidden md:block"></div>
-
-                    <!-- 2020 Block -->
-                    <div class="relative z-10 mb-16 md:grid md:grid-cols-2 md:gap-16 items-center">
-                        <div class="md:text-right mb-6 md:mb-0 order-1">
-                            <span
-                                class="inline-block px-4 py-1 bg-lagoon text-white font-bold rounded-full mb-4 text-sm shadow-md">2020</span>
-                            <h3 class="font-display font-bold text-2xl text-gray-900 mb-3">The Genesis</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                In 2020, at the beginning of the lockdown, Franck Ferdinand, founder of MyFanjan®,
-                                designed and
-                                tested prototypes to allow growing vegetables and fruits using the
-                                minimum available resources.
-                            </p>
-                        </div>
-                        <div class="flex justify-center md:items-center order-2">
-                            <div
-                                class="w-16 h-16 bg-lagoon/10 rounded-full flex items-center justify-center text-lagoon border-4 border-white shadow-lg z-20">
-                                <i data-lucide="calendar" class="w-7 h-7"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- The Solution Block -->
-                    <div class="relative z-10 mb-16 md:grid md:grid-cols-2 md:gap-16 items-center">
-                        <div class="flex justify-center md:items-center order-1 md:order-1">
-                            <div
-                                class="hidden md:flex w-16 h-16 bg-canopy/10 rounded-full items-center justify-center text-canopy border-4 border-white shadow-lg z-20">
-                                <i data-lucide="award" class="w-7 h-7"></i>
-                            </div>
-                        </div>
-                        <div class="mb-6 md:mb-0 order-2 md:order-2">
-                            <h3 class="font-display font-bold text-2xl text-gray-900 mb-3">Frugal Innovation</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Water, natural fertilizer, sun, and thanks to hydroponics no
-                                need for soil, or having a lot of space to grow salads, tomatoes,
-                                eggplants, leafy greens, and other green onions...
-                            </p>
-                            <p class="text-gray-600 mt-4 font-medium border-l-4 border-canopy pl-4">
-                                Thus was born the first MyFanjan® tower, a hydroponic tower designed to
-                                give Reunion Islanders a simple way to cultivate on their terrace in an apartment
-                                or at home.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- R&D Block -->
-                    <div class="relative z-10 mb-16 md:grid md:grid-cols-2 md:gap-16 items-center">
-                        <div class="md:text-right mb-6 md:mb-0 order-1">
-                            <span
-                                class="inline-block px-4 py-1 bg-earth text-white font-bold rounded-full mb-4 text-sm shadow-md">5
-                                Years of R&D</span>
-                            <h3 class="font-display font-bold text-2xl text-gray-900 mb-3">Innovation & Performance</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                After 5 years of research and development, MyFanjan® towers have reached a high
-                                level of technological maturity, offering yields optimized for our climate.
-                            </p>
-                            <p class="text-gray-600 mt-2">
-                                MyFanjan® products are created and manufactured in Reunion Island, with a team that
-                                continuously develops solutions to expand the family of vegetables, flowers,
-                                fruits that can be grown in a small space.
-                            </p>
-                        </div>
-                        <div class="flex justify-center md:items-center order-2">
-                            <div
-                                class="w-16 h-16 bg-earth/10 rounded-full flex items-center justify-center text-earth border-4 border-white shadow-lg z-20">
-                                <i data-lucide="factory" class="w-7 h-7"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Circular Economy Block -->
-                    <div class="bg-alabaster rounded-2xl p-8 md:p-12 text-center shadow-inner relative z-10 mt-20">
-                        <h3 class="font-display font-bold text-3xl text-canopy mb-6">100% Local & Circular</h3>
-                        <div class="max-w-3xl mx-auto text-gray-700 leading-relaxed">
-                            <p class="mb-6">
-                                Our towers are produced locally from materials resulting from the recycling of
-                                Reunionese plastics, transformed by a partner company.
-                            </p>
-                            <p class="mb-8 font-semibold">
-                                Each MyFanjan® tower is therefore 100% local, sustainable, and circular: a product born
-                                here,
-                                to feed here.
-                            </p>
-                            <div
-                                class="inline-block border-2 border-canopy text-canopy px-6 py-3 rounded-lg font-bold uppercase tracking-wider">
-                                MyFanjan® embodies the new era of food sovereignty.
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+    <section class="bg-white">
+      <div class="max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-[104px] flex flex-col">
+          <div class="flex gap-4 sm:gap-8">
+            <div class="flex flex-col items-center shrink-0 w-[84px] sm:w-[120px]">
+              <span class="bg-lagoon text-white font-display font-extrabold text-sm sm:text-base px-3 py-2.5 rounded-full text-center">2020</span>
+              <span class="w-0.5 grow bg-[#D9E4DA] mt-3"></span>
             </div>
-        </section>
+            <div class="flex flex-col gap-10 pb-16 min-w-0">
+              <div class="flex flex-col gap-3.5">
+                <h2 class="font-display font-extrabold text-2xl md:text-[28px] leading-tight text-lagoon">The Genesis</h2>
+                <p class="text-base md:text-[17px] leading-[1.65] text-ink">In 2020, at the beginning of the lockdown, Franck Ferdinand, founder of MyFanjan®, designed and tested prototypes to allow growing vegetables and fruits using the minimum available resources.</p>
+              </div>
+              <div class="flex flex-col gap-3.5">
+                <h2 class="font-display font-extrabold text-2xl md:text-[28px] leading-tight text-lagoon">Frugal Innovation</h2>
+                <p class="text-base md:text-[17px] leading-[1.65] text-ink">Water, natural fertilizer, sun, and thanks to hydroponics no need for soil, or having a lot of space to grow salads, tomatoes, eggplants, leafy greens, and other green onions...</p>
+                <div class="bg-[#EAF2EB] rounded-[18px] px-7 py-6 text-[17px] leading-[1.65] text-lagoon font-medium">Thus was born the first MyFanjan® tower, a hydroponic tower designed to give Reunion Islanders a simple way to cultivate on their terrace in an apartment or at home.</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 sm:gap-8">
+            <div class="flex flex-col items-center shrink-0 w-[84px] sm:w-[120px]">
+              <span class="bg-canopy-deep text-white font-display font-extrabold text-sm sm:text-base px-3 py-2.5 rounded-full text-center">5 Years of R&amp;D</span>
+              <span class="w-0.5 grow bg-[#D9E4DA] mt-3"></span>
+            </div>
+            <div class="flex flex-col gap-10 pb-16 min-w-0">
+              <div class="flex flex-col gap-3.5">
+                <h2 class="font-display font-extrabold text-2xl md:text-[28px] leading-tight text-lagoon">Innovation &amp; Performance</h2>
+                <p class="text-base md:text-[17px] leading-[1.65] text-ink">After 5 years of research and development, MyFanjan® towers have reached a high level of technological maturity, offering yields optimized for our climate.</p>
+                <p class="text-base md:text-[17px] leading-[1.65] text-ink">MyFanjan® products are created and manufactured in Reunion Island, with a team that continuously develops solutions to expand the family of vegetables, flowers, fruits that can be grown in a small space.</p>
+              </div>
+              <div class="flex flex-col gap-3.5">
+                <h2 class="font-display font-extrabold text-2xl md:text-[28px] leading-tight text-lagoon">100% Local &amp; Circular</h2>
+                <p class="text-base md:text-[17px] leading-[1.65] text-ink">Our towers are produced locally from materials resulting from the recycling of Reunionese plastics, transformed by a partner company.</p>
+                <p class="text-base md:text-[17px] leading-[1.65] text-ink">Each MyFanjan® tower is therefore 100% local, sustainable, and circular: a product born here, to feed here.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
 
-    </main>
+  </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white pt-16 pb-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-12 mb-12">
-                <div class="col-span-1 md:col-span-2">
-                    <div class="flex items-center gap-4 mb-6">
-                        <img src="../assets/logo.png" alt="MyFanjan® Logo"
-                            class="h-24 w-auto object-contain bg-white rounded-full p-2" referrerpolicy="no-referrer" />
+  <footer class="bg-lagoon-deep text-[#C3CDD9]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[72px] pb-8 flex flex-col gap-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <img src="../assets/logo.png" alt="MyFanjan® Logo" class="w-12 h-12 object-contain bg-white rounded-full p-1" />
             <div class="flex flex-col">
-              <span class="font-display font-bold text-4xl md:text-5xl leading-none">MyFanjan®</span>
-              <span class="text-xs text-gray-400 font-medium tracking-wider uppercase mt-1">is a registered trademark of NEOPHYTA</span>
+              <span class="font-display font-extrabold text-[22px] text-white leading-none">MyFanjan®</span>
+              <span class="text-[11px] uppercase tracking-wider mt-1 text-[#9AA8B8]">is a registered trademark of NEOPHYTA</span>
             </div>
-                    </div>
-                    <p class="text-gray-400 mb-6 max-w-sm">Leader de l'agriculture verticale en milieu tropical. Nous
-                        transformons les territoires pour une autonomie alimentaire durable.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.linkedin.com/company/myfanjan" target="_blank" rel="noopener noreferrer"
-                            class="text-gray-400 hover:text-white transition-colors"><i data-lucide="linkedin"
-                                class="w-6 h-6"></i></a>
-                        <a href="https://www.facebook.com/myfanjan" target="_blank" rel="noopener noreferrer"
-                            class="text-gray-400 hover:text-white transition-colors"><i data-lucide="facebook"
-                                class="w-6 h-6"></i></a>
-                        <a href="https://www.instagram.com/myfanjan" target="_blank" rel="noopener noreferrer"
-                            class="text-gray-400 hover:text-white transition-colors"><i data-lucide="instagram"
-                                class="w-6 h-6"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg mb-6">Navigation</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li><a href="index.html" class="hover:text-canopy transition-colors">Home</a></li>
-                        <li><a href="vision.html" class="hover:text-canopy transition-colors">Vision</a></li>
-                        <li><a href="solutions-collectivites.html"
-                                class="hover:text-canopy transition-colors">Solutions</a></li>
-                        <li><a href="solutions-entreprises.html" class="hover:text-canopy transition-colors">Offres</a>
-                        </li>
-                        <li><a href="technologie.html" class="hover:text-canopy transition-colors">Technology</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg mb-6">Contact</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li>La Réunion, France</li>
-                        <li>contact@myfanjan.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div
-                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-                <p class="mb-4 md:mb-0">&copy; <span id="year"></span> MyFanjan®. All rights reserved.</p>
-                <div class="flex space-x-6">
-                    <a href="mentions-legales.html" class="hover:text-canopy transition-colors">Legal Notice</a>
-                    <a href="politique-confidentialite.html" class="hover:text-canopy transition-colors">Privacy Policy</a>
-                </div>
-            </div>
+          </div>
+          <p class="text-[15px] leading-relaxed">Leader in tropical vertical farming. We transform territories for sustainable food autonomy.</p>
+          <div class="flex gap-2">
+              <a href="https://www.linkedin.com/company/myfanjan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-white/10 transition-colors"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+              <a href="https://www.facebook.com/myfanjan" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-white/10 transition-colors"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+              <a href="https://www.instagram.com/myfanjan" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-white/10 transition-colors"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+          </div>
         </div>
-    </footer>
+        <div class="flex flex-col gap-3 text-[15px]">
+          <h4 class="font-display font-bold text-[15px] text-white tracking-wide mb-1">Our Solutions</h4>
+            <a href="solutions-collectivites.html" class="text-[#C3CDD9] hover:text-white transition-colors">Communities &amp; Institutions</a>
+            <a href="solutions-agriculteurs.html" class="text-[#C3CDD9] hover:text-white transition-colors">Farmers &amp; Growers</a>
+            <a href="solutions-particuliers.html" class="text-[#C3CDD9] hover:text-white transition-colors">Individuals</a>
+            <a href="solutions-entreprises.html" class="text-[#C3CDD9] hover:text-white transition-colors">Companies &amp; CSR</a>
+        </div>
+        <div class="flex flex-col gap-3 text-[15px]">
+          <h4 class="font-display font-bold text-[15px] text-white tracking-wide mb-1">Get to know us</h4>
+            <a href="qui-sommes-nous.html" class="text-[#C3CDD9] hover:text-white transition-colors">Who We Are</a>
+            <a href="notre-histoire.html" class="text-[#C3CDD9] hover:text-white transition-colors">Our History</a>
+            <a href="equipe.html" class="text-[#C3CDD9] hover:text-white transition-colors">The Team</a>
+            <a href="vision.html" class="text-[#C3CDD9] hover:text-white transition-colors">Vision</a>
+            <a href="technologie.html" class="text-[#C3CDD9] hover:text-white transition-colors">Technology</a>
+        </div>
+        <div class="flex flex-col gap-3 text-[15px]">
+          <h4 class="font-display font-bold text-[15px] text-white tracking-wide mb-1">Contact</h4>
+          <span>Reunion Island, France</span>
+          <a href="mailto:contact@myfanjan.com" class="text-canopy-light hover:text-white transition-colors">contact@myfanjan.com</a>
+          <a href="contact.html" class="self-start mt-2 inline-flex items-center min-h-[44px] px-5 py-3 rounded-full bg-canopy-deep text-white font-semibold hover:bg-canopy transition-colors">Become a Partner</a>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-wrap gap-3 lg:gap-6 justify-between text-[13px]">
+        <p>&copy; <span id="year"></span> MyFanjan®. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="mentions-legales.html" class="text-[#C3CDD9] hover:text-white transition-colors">Legal Notice</a>
+          <a href="politique-confidentialite.html" class="text-[#C3CDD9] hover:text-white transition-colors">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
     <script>
         lucide.createIcons();
         document.getElementById('year').textContent = new Date().getFullYear();

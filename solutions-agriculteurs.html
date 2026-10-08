@@ -28,6 +28,11 @@
                         lagoon: '#1B365D',
                         alabaster: '#F8F9FA',
                         earth: '#7B5E43',
+                        'canopy-deep': '#4E7754',
+                        'canopy-light': '#A9C9AC',
+                        'lagoon-deep': '#132844',
+                        sand: '#F3EEE7',
+                        ink: '#3E4C5E',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -182,148 +187,124 @@
         </div>
     </nav>
 
-    <main class="flex-grow pt-32 pb-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Header -->
-            <div class="text-center mb-16 animate-fade-in-up">
-                <span
-                    class="inline-block px-4 py-1.5 bg-gray-100 text-gray-600 font-bold rounded-full text-sm mb-6 uppercase tracking-wider shadow-sm border border-gray-200">
-                    Agriculteurs & exploitants
-                </span>
-                <h1 class="font-display font-bold text-4xl md:text-6xl text-gray-900 mb-6 leading-tight">
-                    Unités de production intensives
-                </h1>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Rentabilité accrue, ergonomie de travail, gestion optimisée des ressources pour les professionnels.
-                </p>
-            </div>
+    <main class="flex-grow">
 
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Image -->
-                <div class="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl group order-last lg:order-first">
-                    <img src="assets/agriculteurs.jpg" alt="Unités de production intensives"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        referrerpolicy="no-referrer" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-                </div>
-
-                <!-- Content -->
-                <div>
-                    <h3 class="font-display font-bold text-2xl text-lagoon mb-8">Pourquoi choisir cette solution ?</h3>
-
-                    <ul class="space-y-6">
-
-                        <li
-                            class="flex items-start bg-white p-4 rounded-xl shadow-sm border border-gray-100 transition-all hover:shadow-md hover:border-canopy/30">
-                            <div
-                                class="flex-shrink-0 w-10 h-10 rounded-full bg-canopy/10 flex items-center justify-center mr-4">
-                                <i data-lucide="check" class="w-5 h-5 text-canopy"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-gray-900">Rendement x40 au m²</h4>
-                                <p class="text-gray-600 text-sm mt-1">Maximisez votre production sur une surface
-                                    minimale.</p>
-                            </div>
-                        </li>
-
-                        <li
-                            class="flex items-start bg-white p-4 rounded-xl shadow-sm border border-gray-100 transition-all hover:shadow-md hover:border-canopy/30">
-                            <div
-                                class="flex-shrink-0 w-10 h-10 rounded-full bg-canopy/10 flex items-center justify-center mr-4">
-                                <i data-lucide="check" class="w-5 h-5 text-canopy"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-gray-900">Gestion hydraulique automatisée</h4>
-                                <p class="text-gray-600 text-sm mt-1">Économisez l'eau et gagnez du temps grâce à
-                                    l'automatisation.</p>
-                            </div>
-                        </li>
-
-                        <li
-                            class="flex items-start bg-white p-4 rounded-xl shadow-sm border border-gray-100 transition-all hover:shadow-md hover:border-canopy/30">
-                            <div
-                                class="flex-shrink-0 w-10 h-10 rounded-full bg-canopy/10 flex items-center justify-center mr-4">
-                                <i data-lucide="check" class="w-5 h-5 text-canopy"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-gray-900">Ergonomie de récolte</h4>
-                                <p class="text-gray-600 text-sm mt-1">Travaillez à hauteur d'homme et réduisez la
-                                    pénibilité.</p>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                    <div class="mt-12">
-                        <a href="contact.html"
-                            class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-lg text-white bg-canopy hover:opacity-90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                            Demander un devis
-                            <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <section class="bg-lagoon text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 lg:pt-40 pb-20 lg:pb-24">
+        <div class="flex flex-wrap gap-12 lg:gap-x-16 items-center">
+          <div class="flex-[1_1_460px] min-w-0 flex flex-col gap-5 animate-fade-in-up">
+            <span class="text-[13px] font-semibold text-canopy-light"><a href="index.html#solutions" class="hover:text-white transition-colors">Nos solutions</a> / Agriculteurs &amp; exploitants</span>
+            <h1 class="font-display font-extrabold text-4xl sm:text-5xl xl:text-[60px] leading-[1.06] tracking-tight">Unités de production <span class="text-canopy-light">intensives</span></h1>
+            <p class="text-lg md:text-[19px] leading-relaxed text-[#D6DEE8] max-w-xl">Rentabilité accrue, ergonomie de travail, gestion optimisée des ressources pour les professionnels.</p>
+            <div class="flex flex-wrap gap-3.5 mt-2"><a href="contact.html" class="inline-flex items-center min-h-[48px] px-6 py-3.5 rounded-full bg-white text-lagoon font-semibold hover:bg-canopy-light transition-colors">Demander un devis</a></div>
+          </div>
+          <div class="flex-[1_1_480px] min-w-0">
+            <img src="assets/agriculteurs.jpg" alt="Tours de culture hydroponique sous serre" class="w-full aspect-[16/10] object-cover rounded-3xl shadow-[0_30px_60px_rgba(5,15,30,0.45)]" />
+          </div>
         </div>
-    </main>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-[104px] flex flex-col gap-12">
+        <div class="flex flex-col gap-3.5">
+          <span class="text-[13px] font-bold tracking-[0.14em] uppercase text-earth">Les avantages</span>
+          <h2 class="font-display font-extrabold text-3xl md:text-[40px] leading-[1.15] tracking-tight text-lagoon">Pourquoi choisir cette solution&nbsp;?</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-alabaster rounded-[20px] p-8 flex flex-col gap-3.5">
+            <span class="w-[52px] h-[52px] rounded-[14px] bg-[#EAF2EB] text-canopy-deep flex items-center justify-center shrink-0"><i data-lucide="trending-up" class="w-[26px] h-[26px]"></i></span>
+            <h3 class="font-display font-bold text-xl text-lagoon">Rendement x40 au m²</h3>
+            <p class="text-base leading-relaxed text-ink">Maximisez votre production sur une surface minimale.</p>
+          </div>
+          <div class="bg-alabaster rounded-[20px] p-8 flex flex-col gap-3.5">
+            <span class="w-[52px] h-[52px] rounded-[14px] bg-[#EAF2EB] text-canopy-deep flex items-center justify-center shrink-0"><i data-lucide="droplets" class="w-[26px] h-[26px]"></i></span>
+            <h3 class="font-display font-bold text-xl text-lagoon">Gestion hydraulique automatisée</h3>
+            <p class="text-base leading-relaxed text-ink">Économisez l'eau et gagnez du temps grâce à l'automatisation.</p>
+          </div>
+          <div class="bg-alabaster rounded-[20px] p-8 flex flex-col gap-3.5">
+            <span class="w-[52px] h-[52px] rounded-[14px] bg-[#EAF2EB] text-canopy-deep flex items-center justify-center shrink-0"><i data-lucide="person-standing" class="w-[26px] h-[26px]"></i></span>
+            <h3 class="font-display font-bold text-xl text-lagoon">Ergonomie de récolte</h3>
+            <p class="text-base leading-relaxed text-ink">Travaillez à hauteur d'homme et réduisez la pénibilité.</p>
+          </div>
+        </div>
+        <a href="contact.html" class="inline-flex items-center min-h-[48px] px-6 py-3.5 rounded-full bg-canopy-deep text-white font-semibold hover:bg-lagoon transition-colors self-start">Demander un devis</a>
+      </div>
+    </section>
+
+    <section class="bg-alabaster">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-[88px] flex flex-col gap-8">
+        <h2 class="font-display font-extrabold text-[28px] tracking-tight text-lagoon">Nos autres solutions</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <a href="solutions-collectivites.html" class="group bg-white rounded-[18px] p-3 flex items-center gap-4 shadow-[0_1px_2px_rgba(20,35,58,0.06),0_8px_24px_rgba(20,35,58,0.06)] hover:-translate-y-0.5 hover:shadow-lg transition-all">
+            <img src="assets/collectivites.jpg" alt="" class="w-[84px] h-[84px] object-cover rounded-xl shrink-0" loading="lazy" />
+            <span class="flex flex-col gap-1"><span class="text-xs font-bold tracking-[0.1em] uppercase text-canopy-deep">Collectivités &amp; institutions</span><span class="font-display font-bold text-[17px] text-lagoon">Projets pédagogiques &amp; urbains</span></span>
+          </a>
+          <a href="solutions-particuliers.html" class="group bg-white rounded-[18px] p-3 flex items-center gap-4 shadow-[0_1px_2px_rgba(20,35,58,0.06),0_8px_24px_rgba(20,35,58,0.06)] hover:-translate-y-0.5 hover:shadow-lg transition-all">
+            <img src="assets/particuliers-tower.jpg" alt="" class="w-[84px] h-[84px] object-cover rounded-xl shrink-0" loading="lazy" />
+            <span class="flex flex-col gap-1"><span class="text-xs font-bold tracking-[0.1em] uppercase text-canopy-deep">Particuliers</span><span class="font-display font-bold text-[17px] text-lagoon">Systèmes domestiques</span></span>
+          </a>
+          <a href="solutions-entreprises.html" class="group bg-white rounded-[18px] p-3 flex items-center gap-4 shadow-[0_1px_2px_rgba(20,35,58,0.06),0_8px_24px_rgba(20,35,58,0.06)] hover:-translate-y-0.5 hover:shadow-lg transition-all">
+            <img src="assets/entreprises.jpg" alt="" class="w-[84px] h-[84px] object-cover rounded-xl shrink-0" loading="lazy" />
+            <span class="flex flex-col gap-1"><span class="text-xs font-bold tracking-[0.1em] uppercase text-canopy-deep">Entreprises &amp; RSE</span><span class="font-display font-bold text-[17px] text-lagoon">Faites pousser votre RSE</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
     <!-- Footer (Standard) -->
-    <footer class="bg-gray-900 text-white pt-16 pb-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-12 mb-12">
-                <div class="col-span-1 md:col-span-2">
-                    <div class="flex items-center gap-4 mb-6">
-                        <img src="assets/logo.png" alt="MyFanjan® Logo"
-                            class="h-24 w-auto object-contain bg-white rounded-full p-2" referrerpolicy="no-referrer" />
+    <!-- Footer -->
+  <footer class="bg-lagoon-deep text-[#C3CDD9]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[72px] pb-8 flex flex-col gap-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="MyFanjan® Logo" class="w-12 h-12 object-contain bg-white rounded-full p-1" />
             <div class="flex flex-col">
-              <span class="font-display font-bold text-4xl md:text-5xl leading-none">MyFanjan®</span>
-              <span class="text-xs text-gray-400 font-medium tracking-wider uppercase mt-1">est une marque déposée par la société NEOPHYTA</span>
+              <span class="font-display font-extrabold text-[22px] text-white leading-none">MyFanjan®</span>
+              <span class="text-[11px] uppercase tracking-wider mt-1 text-[#9AA8B8]">est une marque déposée par la société NEOPHYTA</span>
             </div>
-                    </div>
-                    <p class="text-gray-400 mb-6 max-w-sm">Leader de l'agriculture verticale en milieu tropical. Nous
-                        transformons les territoires pour une autonomie alimentaire durable.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.linkedin.com/company/myfanjan" target="_blank" rel="noopener noreferrer"
-                            class="text-gray-400 hover:text-white transition-colors"><i data-lucide="linkedin"
-                                class="w-6 h-6"></i></a>
-                        <a href="https://www.facebook.com/myfanjan" target="_blank" rel="noopener noreferrer"
-                            class="text-gray-400 hover:text-white transition-colors"><i data-lucide="facebook"
-                                class="w-6 h-6"></i></a>
-                        <a href="https://www.instagram.com/myfanjan" target="_blank" rel="noopener noreferrer"
-                            class="text-gray-400 hover:text-white transition-colors"><i data-lucide="instagram"
-                                class="w-6 h-6"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg mb-6">Navigation</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li><a href="index.html" class="hover:text-canopy transition-colors">Accueil</a></li>
-                        <li><a href="vision.html" class="hover:text-canopy transition-colors">Vision</a></li>
-                        <li><a href="solutions-collectivites.html"
-                                class="hover:text-canopy transition-colors">Solutions</a></li>
-                        <li><a href="solutions-entreprises.html" class="hover:text-canopy transition-colors">Offres</a>
-                        </li>
-                        <li><a href="technologie.html" class="hover:text-canopy transition-colors">Technologie</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg mb-6">Contact</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li>La Réunion, France</li>
-                        <li>contact@myfanjan.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div
-                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-                <p class="mb-4 md:mb-0">&copy; <span id="year"></span> MyFanjan®. Tous droits réservés.</p>
-                <div class="flex space-x-6">
-                    <a href="mentions-legales.html" class="hover:text-canopy transition-colors">Mentions Légales</a>
-                    <a href="politique-confidentialite.html" class="hover:text-canopy transition-colors">Politique de
-                        Confidentialité</a>
-                </div>
-            </div>
+          </div>
+          <p class="text-[15px] leading-relaxed">Leader de l'agriculture verticale en milieu tropical. Nous transformons les territoires pour une autonomie alimentaire durable.</p>
+          <div class="flex gap-2">
+              <a href="https://www.linkedin.com/company/myfanjan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-white/10 transition-colors"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+              <a href="https://www.facebook.com/myfanjan" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-white/10 transition-colors"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+              <a href="https://www.instagram.com/myfanjan" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-white/10 transition-colors"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+          </div>
         </div>
-    </footer>
+        <div class="flex flex-col gap-3 text-[15px]">
+          <h4 class="font-display font-bold text-[15px] text-white tracking-wide mb-1">Nos solutions</h4>
+            <a href="solutions-collectivites.html" class="text-[#C3CDD9] hover:text-white transition-colors">Collectivités &amp; institutions</a>
+            <a href="solutions-agriculteurs.html" class="text-[#C3CDD9] hover:text-white transition-colors">Agriculteurs &amp; exploitants</a>
+            <a href="solutions-particuliers.html" class="text-[#C3CDD9] hover:text-white transition-colors">Particuliers</a>
+            <a href="solutions-entreprises.html" class="text-[#C3CDD9] hover:text-white transition-colors">Entreprises &amp; RSE</a>
+        </div>
+        <div class="flex flex-col gap-3 text-[15px]">
+          <h4 class="font-display font-bold text-[15px] text-white tracking-wide mb-1">Mieux nous connaître</h4>
+            <a href="qui-sommes-nous.html" class="text-[#C3CDD9] hover:text-white transition-colors">Qui sommes-nous</a>
+            <a href="notre-histoire.html" class="text-[#C3CDD9] hover:text-white transition-colors">Notre histoire</a>
+            <a href="equipe.html" class="text-[#C3CDD9] hover:text-white transition-colors">L'équipe MyFanjan®</a>
+            <a href="vision.html" class="text-[#C3CDD9] hover:text-white transition-colors">Vision</a>
+            <a href="technologie.html" class="text-[#C3CDD9] hover:text-white transition-colors">Technologie</a>
+        </div>
+        <div class="flex flex-col gap-3 text-[15px]">
+          <h4 class="font-display font-bold text-[15px] text-white tracking-wide mb-1">Contact</h4>
+          <span>La Réunion, France</span>
+          <a href="mailto:contact@myfanjan.com" class="text-canopy-light hover:text-white transition-colors">contact@myfanjan.com</a>
+          <a href="contact.html" class="self-start mt-2 inline-flex items-center min-h-[44px] px-5 py-3 rounded-full bg-canopy-deep text-white font-semibold hover:bg-canopy transition-colors">Devenir partenaire</a>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-wrap gap-3 lg:gap-6 justify-between text-[13px]">
+        <p>&copy; <span id="year"></span> MyFanjan®. Tous droits réservés.</p>
+        <div class="flex gap-6">
+          <a href="mentions-legales.html" class="text-[#C3CDD9] hover:text-white transition-colors">Mentions légales</a>
+          <a href="politique-confidentialite.html" class="text-[#C3CDD9] hover:text-white transition-colors">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
     <script>
         lucide.createIcons();
         document.getElementById('year').textContent = new Date().getFullYear();
